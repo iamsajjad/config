@@ -1,5 +1,6 @@
 set number
 syntax on
+set tabstop=4
 colorscheme desert
 set backspace=indent,eol,start
 set ruler
