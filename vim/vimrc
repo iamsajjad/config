@@ -31,4 +31,5 @@ set showcmd             " show (partial) command in status line
 " Ctrl + Shift + Up / Down To Move Line Up or Down
 noremap <c-s-up> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
 noremap <c-s-down> ddp
+nmap <C-d> mzyyp`z
 
