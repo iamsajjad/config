@@ -14,3 +14,7 @@ git push origin --tags
 #delete local tag
 git tag -d #tag name here#
 
+#to ignore changes on file
+git update-index --assume-unchanged [<file> ...]
+#undo
+git update-index --no-assume-unchanged [<file> ...]
