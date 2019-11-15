@@ -183,7 +183,7 @@ set statusline+=%2c,
 set statusline+=%l/%L
 
 " always show status line
-set laststatus=2
+set laststatus=0
 
 " return '[tabs]' if tab chars in file, or empty string
 function! StatuslineTabWarning()
