@@ -1,3 +1,6 @@
+#for more info go to
+#https://developer.fedoraproject.org/tech/database/postgresql/about.html
+
 sudo dnf install postgresql postgresql-server # install client/server
 sudo postgresql-setup initdb                  # initialize PG cluster
 #sudo systemctl start postgresql               # start cluster
