@@ -1,4 +1,7 @@
 
+#save username/password for user
+git config --global credential.helper store
+
 #undo last push
 git push -f origin HEAD^:master
 
