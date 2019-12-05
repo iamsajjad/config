@@ -43,3 +43,5 @@ PS1="$LIGHT_GREEN<[\u@\h in $YELLOW\W$LIGHT_GREEN]>$YELLOW\e[1m\$(gitBranch)\[\0
 # Load virtualenvwrapper
 source virtualenvwrapper.sh &> /dev/null
 
+# Free Memory
+alias freememo="sudo free && sync && echo 3 > /proc/sys/vm/drop_caches && free"
