@@ -1,7 +1,7 @@
 
 # imp Packages
 sudo dnf install make
-sudo dnf install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel libevent-devel
+sudo dnf install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel libevent-devel sqlite-devel
 
 # Vim
 sudo dnf install vim
