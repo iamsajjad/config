@@ -19,5 +19,11 @@ git tag -d #tag name here#
 
 #to ignore changes on file
 git update-index --assume-unchanged [<file> ...]
+
 #undo
 git update-index --no-assume-unchanged [<file> ...]
+
+#get changes for single file from another branch
+#checkout to your branch
+git checkout [branch_has_changes] [<path> ...]
+#then commit changes
