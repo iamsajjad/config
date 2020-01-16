@@ -27,3 +27,6 @@ git update-index --no-assume-unchanged [<file> ...]
 #checkout to your branch
 git checkout [branch_has_changes] [<path> ...]
 #then commit changes
+
+#save username and password for gitlab or others
+git config --global credential.helper store
