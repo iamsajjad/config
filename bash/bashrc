@@ -28,18 +28,30 @@ export NVM_DIR="$HOME/.nvm"
 export HISTCONTROL=ignoreboth
 
 # Show current git branch in prompt.
-gitBranch() {
+GITBranch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-RED="\[\033[0;31m\]"
-YELLOW="\[\033[0;33m\]"
-GREEN="\[\033[0;32m\]"
-LIGHT_GREEN="\[\033[1;32m\]"
-LIGHT_GRAY="\[\033[0;37m\]"
-DEFAULT="\[\e[39m\]"
+# Old Bash Line ===================================================================>
+#RED="\[\033[0;31m\]"
+#YELLOW="\[\033[0;33m\]"
+#GREEN="\[\033[0;32m\]"
+#LIGHT_GREEN="\[\033[1;32m\]"
+#LIGHT_GRAY="\[\033[0;37m\]"
+#DEFAULT="\[\e[39m\]"
+#PS1="$LIGHT_GREEN<[\u@\h in $YELLOW\W$LIGHT_GREEN]>$YELLOW\$(gitBranch)$DEFAULT$ "
+#==================================================================================>
 
-PS1="$LIGHT_GREEN<[\u@\h in $YELLOW\W$LIGHT_GREEN]>$YELLOW\$(gitBranch)$DEFAULT$ "
+# Bash Line
+END="\e[49m\e[39m"
+START="\e[90m\e[40m"
+BLINKER="\e[1m\e[35m\e[5m>\e[25m\e[39m\e[22m"
+USERNAME="\e[39\e[35m\e[1m\u\e[22m\e[39\e[90m"
+COMPUTER="\e[1m@\h\e[22m"
+DIRECTORY="\e[1m...\W\e[22m"
+BRANCH="\e[36m\$(GITBranch)\e[39m"
+
+PS1="$START$USERNAME$COMPUTER $DIRECTORY$BRANCH$START>$BLINKER>$END "
 
 # Load virtualenvwrapper
 source virtualenvwrapper.sh &> /dev/null
