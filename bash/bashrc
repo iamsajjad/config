@@ -43,18 +43,20 @@ GITBranch() {
 #==================================================================================>
 
 # Bash Line
-END="\e[49m\e[39m"
-START="\e[90m\e[40m"
-BLINKER="\e[1m\e[35m\e[5m>\e[25m\e[39m\e[22m"
-USERNAME="\e[39\e[35m\e[1m\u\e[22m\e[39\e[90m"
-COMPUTER="\e[1m@\h\e[22m"
-DIRECTORY="\e[1m...\W\e[22m"
-BRANCH="\e[36m\$(GITBranch)\e[39m"
 
-PS1="$START$USERNAME$COMPUTER $DIRECTORY$BRANCH$START>$BLINKER>$END "
+END="\e[49m\e[39m\e[22m"
+START="\e[1m\e[90m\e[40m"
+BLINKER=">\e[35m\e[5m>\e[25m\e[39m>"
+USERNAME="\e[39\e[35m\u"
+COMPUTER="\e[90m\e[1m@\h"
+DIRECTORY="\e[90m...\W"
+BRANCH="\e[36m\$(GITBranch)"
+
+PS1="$START$USERNAME$COMPUTER $DIRECTORY$BRANCH$START$BLINKER$END "
 
 # Load virtualenvwrapper
 source virtualenvwrapper.sh &> /dev/null
 
 # Free Memory
 alias freememo="sudo free && sync && echo 3 > /proc/sys/vm/drop_caches && free"
+
