@@ -25,7 +25,7 @@ git update-index --no-assume-unchanged [<file> ...]
 
 #get changes for single file from another branch
 #checkout to your branch
-git checkout [branch_has_changes] [<path> ...]
+git checkout [branch_has_changes] -- [<path> ...]
 #then commit changes
 
 #save username and password for gitlab or others
