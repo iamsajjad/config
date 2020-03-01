@@ -2,7 +2,6 @@
 " Theme and Number
 
 set number
-colorscheme desert
 
 " configure expanding of tabs for various file types
 au BufRead,BufNewFile *.py set expandtab
@@ -32,4 +31,27 @@ set showcmd             " show (partial) command in status line
 noremap <c-s-up> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
 noremap <c-s-down> ddp
 nmap <C-d> mzyyp`z
+
+" Plugins
+" install vim package manager vim-plug
+" https://github.com/junegunn/vim-plug.git
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+" Plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'tomasr/molokai'
+Plug 'https://github.com/endel/vim-github-colorscheme.git'
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+"then do :PlugInstall
+
+" theme mode
+set background=dark
+
+"colorscheme molokai
+"colorscheme github
+colorscheme gruvbox
 
