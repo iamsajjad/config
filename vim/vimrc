@@ -43,16 +43,20 @@ nmap <C-d> mzyyp`z
 call plug#begin('~/.vim/plugged')
 
 Plug 'tomasr/molokai'
+Plug 'cocopon/iceberg.vim'
+Plug 'wolf-dog/nighted.vim'
 Plug 'https://github.com/endel/vim-github-colorscheme.git'
+Plug 'fcpg/vim-fahrenheit'
 Plug 'morhetz/gruvbox'
+Plug 'sjl/badwolf'
 
 call plug#end()
-"then do :PlugInstall
 
 " theme mode
 set background=dark
 
 "colorscheme molokai
 "colorscheme github
-colorscheme gruvbox
-
+"colorscheme gruvbox
+"colorscheme badwolf
+colorscheme fahrenheit
