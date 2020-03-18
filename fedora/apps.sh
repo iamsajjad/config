@@ -1,9 +1,8 @@
 
 # Telegram Desktop
-sudo dnf copr enable rommon/telegram
-sudo dnf install telegram-desktop
-
-# commond-line Telegram
-sudo dnf copr enable iranzo/telegram-cli
-sudo dnf install telegram-cli
+download tsetup from https://desktop.telegram.org/
+cd ~/Downloads
+tar -xJvf tsetup*
+sudo mv Telegram /opt/telegram
+sudo ln -sf /opt/telegram/Telegram /usr/bin/telegram
 
