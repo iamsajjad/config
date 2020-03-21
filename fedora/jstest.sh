@@ -6,6 +6,8 @@ sudo dnf install joystick
 sudo dnf install sysfsutils
 # replace N to 1 in this file'/module/bluetooth/parameters/disable_ertm'
 sudo echo 1 > /sys/module/bluetooth/parameters/disable_ertm
+sudo vim /etc/modprobe.d/bluetooth.conf
+# and add this line 'options bluetooth disable_ertm=1'
 
 #play around bluetooth
 bluetoothctl
