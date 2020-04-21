@@ -1,2 +1,1 @@
-# settings
-My settings editers and other stuff
+# My configs and dotfiles 
