@@ -5,6 +5,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Exports
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
@@ -27,36 +28,54 @@ export NVM_DIR="$HOME/.nvm"
 #remove duplicate entries from history
 export HISTCONTROL=ignoreboth
 
+# Aliases
+# Free Memory
+alias freememo="sudo free && sync && echo 3 > /proc/sys/vm/drop_caches && free"
+
+# list all dirctories
+alias la='ls -A --group-directories-first --color=auto '
+
+# do ls with group-directories-first
+alias ls='ls --group-directories-first --color=auto '
+
+#How many times have you needed to unpack a .tar file and couldn't remember the exact arguments needed? Aliases to the rescue! Just add the following to your .bash_profile file and then use untar FileName to unpack any .tar file.
+alias untar='tar -zxvf '
+
+#Want to download something but be able to resume if something goes wrong?
+alias wget='wget -c '
+
+#Need to generate a random, 20-character password for a new online account? No problem.
+alias getpass="openssl rand -base64 20"
+
+#Downloaded a file and need to test the checksum? We've got that covered too.
+alias sha='shasum -a 256 '
+
+#A normal ping will go on forever. We don't want that. Instead, let's limit that to just five pings.
+alias ping='ping -c 5'
+
+#Start a web server in any folder you'd like.
+alias www='python -m SimpleHTTPServer 8000'
+
+#Want to know how fast your network is? Just download Speedtest-cli and use this alias. You can choose a server closer to your location by using the speedtest-cli --list command.
+alias speed='speedtest-cli --server 2406 --simple'
+
+#How many times have you needed to know your external IP address and had no idea how to get that info? Yeah, me too.
+alias ipe='curl ipinfo.io/ip'
+
+#Need to know your local IP address?
+alias ipi='ipconfig getifaddr en0'
+
+#clear the screen.
+alias c='clear'
+
+#PS1
 # Show current git branch in prompt.
 GITBranch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-# Old Bash Line ===================================================================>
-#RED="\[\033[0;31m\]"
-#YELLOW="\[\033[0;33m\]"
-#GREEN="\[\033[0;32m\]"
-#LIGHT_GREEN="\[\033[1;32m\]"
-#LIGHT_GRAY="\[\033[0;37m\]"
-#DEFAULT="\[\e[39m\]"
-#PS1="$LIGHT_GREEN<[\u@\h in $YELLOW\W$LIGHT_GREEN]>$YELLOW\$(gitBranch)$DEFAULT$ "
-#==================================================================================>
-
-# Bash Line
-
-END="\[\e[49m\e[39m\e[22m\]"
-START="\[\e[1m\e[90m\e[40m\]"
-BLINKER=">\[\e[35m\e[5m\]>\[\e[25m\e[39m>\]"
-USERNAME="\[\e[39\e[35m\]\u"
-COMPUTER="\[\e[90m\e[1m\]@\h"
-DIRECTORY="\[\e[90m\]...\W"
-BRANCH="\[\e[36m\]\$(GITBranch)"
-
-PS1="$START$USERNAME$COMPUTER $DIRECTORY$BRANCH$START$BLINKER$END "
+PS1="\[\e[1m\e[90m\]\[\e[39\e[35m\]\u\[\e[90m\e[1m\]@\h \[\e[90m\]...\W\[\e[36m\]\$(GITBranch)\[\e[1m\e[90m\]>\[\e[35m\]>\[\e[39m>\]\[\e[39m\e[22m\] "
 
 # Load virtualenvwrapper
 source virtualenvwrapper.sh &> /dev/null
-
-# Free Memory
-alias freememo="sudo free && sync && echo 3 > /proc/sys/vm/drop_caches && free"
 
