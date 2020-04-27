@@ -1,28 +1,49 @@
+".vimrc
+
+"------------------------------------------------------------------------------------Plugins
+
+" Install vim Package Manager vim-plug GitHub [https://github.com/junegunn/vim-plug.git]
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+call plug#begin('~/.vim/plugged')
+" Tools
+    Plug 'airblade/vim-gitgutter'
+    Plug 'junegunn/goyo.vim'
+    Plug 'vifm/vifm.vim'
+    Plug 'junegunn/limelight.vim'
+    Plug 'scrooloose/vim-fugitive' " git tools package
+" Syntax
+    Plug 'tpope/vim-markdown'
+    Plug 'ap/vim-css-color' "Displays a preview of colors with CSS 
+    Plug 'vim-scripts/fountain.vim'
+" Colorscheme
+    Plug 'fcpg/vim-fahrenheit' " Base theme
+    Plug 'kristijanhusak/vim-hybrid-material'
+    Plug 'NLKNguyen/papercolor-theme'
+    Plug 'ajh17/Spacegray.vim'
+    Plug 'chriskempson/base16-vim'
+    Plug 'tomasr/molokai'
+    Plug 'cocopon/iceberg.vim'
+    Plug 'wolf-dog/nighted.vim'
+    Plug 'https://github.com/endel/vim-github-colorscheme.git'
+    Plug 'morhetz/gruvbox'
+    Plug 'sjl/badwolf'
+call plug#end()
+
+"---------------------------------------------------------------------------General Settings
 
 " must be first, changes behaviour of other settings
 set nocompatible
-
 " 256 colors
 set t_Co=256
-
 " syntax highlighting
 syntax on
-
-" theme mode
-set background=dark
-
 " sane text files
 set fileformat=unix
+" file encoding
 set encoding=utf-8
-
 " enter spaces when tab is pressed
 set expandtab
-" configure expanding of tabs for various file types
-au BufRead,BufNewFile *.py set expandtab
-au BufRead,BufNewFile *.c set noexpandtab
-au BufRead,BufNewFile *.h set noexpandtab
-au BufRead,BufNewFile Makefile* set noexpandtab
-
 " break lines when line length increases
 set textwidth=120
 " use 4 spaces to represent tab
@@ -32,35 +53,26 @@ set softtabstop=4
 set shiftwidth=4
 " copy indent from current line when starting a new line
 set autoindent
-
 "make sure highlighting works all the way down long files
 autocmd BufEnter * :syntax sync fromstart
-
 " allow cursor to be positioned one char past end of line
 " and apply operations to all of selection including last char
 set selection=exclusive
-
 " allow backgrounding buffers without writing them
 " and remember marks/undo for backgrounded buffers
 set hidden
-
 " Keep more context when scrolling off the end of a buffer
 set scrolloff=3
-
 " allow cursor keys to go right off end of one line, onto start of next
 set whichwrap+=<,>,[,]
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
 " no line wrapping
 set nowrap
-
 " line numbers
 set number
-
 " when joining lines, don't insert two spaces after punctuation
 set nojoinspaces
-
 " Make searches case-sensitive only if they contain upper-case characters
 set ignorecase
 set smartcase
@@ -68,44 +80,98 @@ set smartcase
 set incsearch
 " search-next wraps back to start of file
 set wrapscan
-" highlight last search matches
 set hlsearch
+" new spilt [vs right] or [hs below]
+set splitbelow splitright
+" make tab completion for files/buffers act like bash
+set wildmenu
+" highlight last search matches
+" display cursor co-ords at all times
+set ruler
+" highlight cursor line
+set cursorline
+" display number of selected chars, lines, or size of blocks.
+set showcmd
+" show matching brackets, etc, for 1/10th of a second
+set showmatch
+set matchtime=1
+" enables filetype specific plugins
+filetype plugin on
+" enables filetype detection
+filetype on
+" enable automatic yanking to and pasting from the selection
+set clipboard+=unnamed
+
+"---------------------------------------------------------------------------Color Settings
+
+" theme mode
+set background=dark
+" Default theme
+colorscheme fahrenheit
+" Change theme
+map <F1> :colorscheme fahrenheit<CR>
+map <F2> :colorscheme gruvbox<CR>
+map <F3> :colorscheme badwolf<CR>
+map <F4> :colorscheme github<CR>
+map <F5> :colorscheme molokai<CR>
+
+"----------------------------------------------------------------------Key Binding 'Mapping' 
+
 " map key to dismiss search highlightedness
 map <bs> :oh<CR>
-
 " grep for word under cursor
 noremap <Leader>g :grep -rw '<C-r><C-w>' .<CR>
-
 " aliases for window switching (browser captures ctrl-w)
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
 noremap <C-k> <C-w>k
 noremap <C-j> <C-w>j
-
-" new spilt [vs right] or [hs below]
-set splitbelow splitright
-
 " similarly ctrl-q doesnt work, so use leader-q for block visual mode
 nnoremap <leader>q <C-Q>
+"autocompletion
+inoremap <c-space> <c-n>
+inoremap <c-s-space> <c-p>
+" Ctrl + Shift + Up / Down To Move Line Up or Down
+noremap <c-s-up> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
+noremap <c-s-down> ddp
+nmap <C-d> mzyyp`z
 
-" make tab completion for files/buffers act like bash
-set wildmenu
+"------------------------------------------------------------------Remember Cursor Postion 
 
-" display cursor co-ords at all times
-set ruler
-set cursorline
+function! MarkWindowSwap()
+    " marked window number
+    let g:markedWinNum = winnr()
+    let g:markedBufNum = bufnr("%")
+endfunction
 
-" display number of selected chars, lines, or size of blocks.
-set showcmd
+function! DoWindowSwap()
+    let curWinNum = winnr()
+    let curBufNum = bufnr("%")
+    " Switch focus to marked window
+    exe g:markedWinNum . "wincmd w"
 
-" show matching brackets, etc, for 1/10th of a second
-set showmatch
-set matchtime=1
+    " Load current buffer on marked window
+    exe 'hide buf' curBufNum
 
-" enables filetype specific plugins
-filetype plugin on
-" enables filetype detection
-filetype on
+    " Switch focus to current window
+    exe curWinNum . "wincmd w"
+
+    " Load marked buffer on current window
+    exe 'hide buf' g:markedBufNum
+endfunction
+
+"Swip Split Windows
+nnoremap <s-Left> :call MarkWindowSwap()<CR> <C-w>h :call DoWindowSwap()<CR>
+nnoremap <s-Down> :call MarkWindowSwap()<CR> <C-w>j :call DoWindowSwap()<CR>
+nnoremap <s-Up> :call MarkWindowSwap()<CR> <C-w>k :call DoWindowSwap()<CR>
+nnoremap <s-Right> :call MarkWindowSwap()<CR> <C-w>l :call DoWindowSwap()<CR>
+" Resize split files
+nnoremap <C-Up> :resize +2<CR> 
+nnoremap <C-Down> :resize -2<CR>
+nnoremap <C-Left> :vertical resize +2<CR>
+nnoremap <C-Right> :vertical resize -2<CR>
+
+"------------------------------------------------------------------Remember Cursor Postion 
 
 if has("autocmd")
     " Enable file type detection.
@@ -127,8 +193,6 @@ else
     set autoindent
 
 endif " has("autocmd")
-" enable automatic yanking to and pasting from the selection
-set clipboard+=unnamed
 
 " places to look for tags files:
 set tags=./tags,tags
@@ -138,45 +202,4 @@ set tags=./tags,tags
 " recursively search cwd's parent dirs for tags file
 set tags+=tags;/
 
-"autocompletion
-inoremap <c-space> <c-n>
-inoremap <c-s-space> <c-p>
 
-" Ctrl + Shift + Up / Down To Move Line Up or Down
-noremap <c-s-up> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
-noremap <c-s-down> ddp
-nmap <C-d> mzyyp`z
-
-
-"------------------------------------------------------------------------------------
-"--- Plugins-------------------------------------------------------------------------
-"------------------------------------------------------------------------------------
-
-" install vim package manager vim-plug
-" https://github.com/junegunn/vim-plug.git
-" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-" Plugins
-call plug#begin('~/.vim/plugged')
-
-" colorscheme
-"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-Plug 'tomasr/molokai'
-Plug 'cocopon/iceberg.vim'
-Plug 'wolf-dog/nighted.vim'
-Plug 'https://github.com/endel/vim-github-colorscheme.git'
-Plug 'fcpg/vim-fahrenheit'
-Plug 'morhetz/gruvbox'
-Plug 'sjl/badwolf'
-
-" packages
-Plug 'scrooloose/vim-fugitive' " git tools package
-
-call plug#end()
-
-"colorscheme molokai
-"colorscheme github
-"colorscheme gruvbox
-"colorscheme badwolf
-colorscheme fahrenheit
