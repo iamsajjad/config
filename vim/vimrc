@@ -1,6 +1,6 @@
 ".vimrc
 
-"------------------------------------------------------------------------------------Plugins
+"----------------------------------------------------------------------------------Plugins
 
 " Install vim Package Manager vim-plug GitHub [https://github.com/junegunn/vim-plug.git]
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -30,7 +30,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'sjl/badwolf'
 call plug#end()
 
-"---------------------------------------------------------------------------General Settings
+"-------------------------------------------------------------------------General Settings
 
 " must be first, changes behaviour of other settings
 set nocompatible
@@ -115,7 +115,7 @@ map <F3> :colorscheme badwolf<CR>
 map <F4> :colorscheme github<CR>
 map <F5> :colorscheme molokai<CR>
 
-"----------------------------------------------------------------------Key Binding 'Mapping' 
+"--------------------------------------------------------------------Key Binding 'Mapping' 
 
 " map key to dismiss search highlightedness
 map <bs> :oh<CR>
@@ -132,9 +132,13 @@ nnoremap <leader>q <C-Q>
 inoremap <c-space> <c-n>
 inoremap <c-s-space> <c-p>
 " Ctrl + Shift + Up / Down To Move Line Up or Down
+" in normal mode
 noremap <c-s-up> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
 noremap <c-s-down> ddp
 nmap <C-d> mzyyp`z
+" in visual mode
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
 
 "------------------------------------------------------------------Remember Cursor Postion 
 
@@ -166,10 +170,10 @@ nnoremap <s-Left> :call MarkWindowSwap()<CR> <C-w>h :call DoWindowSwap()<CR>
 nnoremap <s-Down> :call MarkWindowSwap()<CR> <C-w>j :call DoWindowSwap()<CR>
 nnoremap <s-Right> :call MarkWindowSwap()<CR> <C-w>l :call DoWindowSwap()<CR>
 " Resize split files
-nnoremap <C-Up> :resize +1<CR> 
-nnoremap <C-Down> :resize -1<CR>
-nnoremap <C-Left> :vertical resize +1<CR>
-nnoremap <C-Right> :vertical resize -1<CR>
+nnoremap <C-Up> :resize -1<CR> 
+nnoremap <C-Down> :resize +1<CR>
+nnoremap <C-Left> :vertical resize -1<CR>
+nnoremap <C-Right> :vertical resize +1<CR>
 
 "------------------------------------------------------------------Remember Cursor Postion 
 
