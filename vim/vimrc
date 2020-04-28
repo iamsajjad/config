@@ -143,25 +143,22 @@ xnoremap J :move '>+1<CR>gv-gv
 "---------------------------------------------------------------------Split Screen Configs
 
 function! MarkWindowSwap()
-    " marked window number
     let g:markedWinNum = winnr()
-    let g:markedBufNum = bufnr("%")
 endfunction
 
 function! DoWindowSwap()
-    let curWinNum = winnr()
-    let curBufNum = bufnr("%")
-    " Switch focus to marked window
+    "Mark destination
+    let curNum = winnr()
+    let curBuf = bufnr( "%" )
     exe g:markedWinNum . "wincmd w"
-
-    " Load current buffer on marked window
-    exe 'hide buf' curBufNum
-
-    " Switch focus to current window
-    exe curWinNum . "wincmd w"
-
-    " Load marked buffer on current window
-    exe 'hide buf' g:markedBufNum
+    "Switch to source and shuffle dest->source
+    let markedBuf = bufnr( "%" )
+    "Hide and open so that we aren't prompted and keep history
+    exe 'hide buf' curBuf
+    "Switch to dest and shuffle source->dest
+    exe curNum . "wincmd w"
+    "Hide and open so that we aren't prompted and keep history
+    exe 'hide buf' markedBuf 
 endfunction
 
 " Taggle Between Split Files
