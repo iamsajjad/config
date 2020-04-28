@@ -102,7 +102,7 @@ filetype on
 " enable automatic yanking to and pasting from the selection
 set clipboard+=unnamed
 
-"---------------------------------------------------------------------------Color Settings
+"----------------------------------------------------------------------------Color Configs 
 
 " theme mode
 set background=dark
@@ -140,7 +140,7 @@ nmap <C-d> mzyyp`z
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
 
-"------------------------------------------------------------------Remember Cursor Postion 
+"---------------------------------------------------------------------Split Screen Configs
 
 function! MarkWindowSwap()
     " marked window number
@@ -164,12 +164,14 @@ function! DoWindowSwap()
     exe 'hide buf' g:markedBufNum
 endfunction
 
-"Swip Split Windows
+" Taggle Between Split Files
+nnoremap <Tab> <C-w>w
+" Swip Split Files
 nnoremap <s-Up> :call MarkWindowSwap()<CR> <C-w>k :call DoWindowSwap()<CR>
 nnoremap <s-Left> :call MarkWindowSwap()<CR> <C-w>h :call DoWindowSwap()<CR>
 nnoremap <s-Down> :call MarkWindowSwap()<CR> <C-w>j :call DoWindowSwap()<CR>
 nnoremap <s-Right> :call MarkWindowSwap()<CR> <C-w>l :call DoWindowSwap()<CR>
-" Resize split files
+" Resize Split Files
 nnoremap <C-Up> :resize -1<CR> 
 nnoremap <C-Down> :resize +1<CR>
 nnoremap <C-Left> :vertical resize -1<CR>
