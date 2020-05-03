@@ -5,7 +5,9 @@
 # Upgrade all installed packages of Fedora version 31 by running 
 sudo dnf upgrade --refresh
 
-# Reboot the Fedora Linux system by tying the sudo reboot command if kernel update was installed.
+# Reboot the Fedora Linux system by tying the 
+sudo reboot #command if kernel update was installed.
+
 # Install the Fedora update utility, run: 
 sudo dnf install dnf-plugin-system-upgrade
 
