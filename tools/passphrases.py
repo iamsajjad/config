@@ -9,7 +9,6 @@ def passEngine(length=64):
     passChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
     return ''.join((random.choice(passChars) for i in range(length)))
 
-
 def uniqPasses(limit=100000):
     
     passData = []
