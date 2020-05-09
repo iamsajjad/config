@@ -29,40 +29,40 @@ export NVM_DIR="$HOME/.nvm"
 export HISTCONTROL=ignoreboth
 
 # Aliases
-# Free Memory
+# Free Memory.
 alias freememo="sudo free && sync && echo 3 > /proc/sys/vm/drop_caches && free"
 
-# list all dirctories
+#List all dirctories.
 alias la='ls -A --group-directories-first --color=auto '
 
-# do ls with group-directories-first
+#Do ls with group-directories-first.
 alias ls='ls --group-directories-first --color=auto '
 
-#How many times have you needed to unpack a .tar file and couldn't remember the exact arguments needed? Aliases to the rescue! Just add the following to your .bash_profile file and then use untar FileName to unpack any .tar file.
+#Unpack a .tar file.
 alias untar='tar -zxvf '
 
-#Want to download something but be able to resume if something goes wrong?
+#Download something but be able to resume if something goes wrong.
 alias wget='wget -c '
 
-#Need to generate a random, 20-character password for a new online account? No problem.
+#Generate a random, 20-character password.
 alias getpass="openssl rand -base64 20"
 
-#Downloaded a file and need to test the checksum? We've got that covered too.
+#Test file checksum.
 alias sha='shasum -a 256 '
 
-#A normal ping will go on forever. We don't want that. Instead, let's limit that to just five pings.
+#Limit that to just five pings.
 alias ping='ping -c 5'
 
-#Start a web server in any folder you'd like.
+#Start a web server in any folder.
 alias www='python -m SimpleHTTPServer 8000'
 
-#Want to know how fast your network is? Just download Speedtest-cli and use this alias. You can choose a server closer to your location by using the speedtest-cli --list command.
+#Get your network spped download Speedtest-cli and use this alias. You can choose a server closer to your location by using the speedtest-cli --list command.
 alias speed='speedtest-cli --server 2406 --simple'
 
-#How many times have you needed to know your external IP address and had no idea how to get that info? Yeah, me too.
+#Get external IP address.
 alias ipe='curl ipinfo.io/ip'
 
-#Need to know your local IP address?
+#Get local IP address.
 alias ipi='ipconfig getifaddr en0'
 
 #clear the screen.
