@@ -74,7 +74,7 @@ GITBranch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-PS1="\[\e[1m\e[90m\]\[\e[39\e[35m\]\u\[\e[90m\e[1m\]@\h \[\e[90m\]...\W\[\e[36m\]\$(GITBranch)\[\e[1m\e[90m\]>\[\e[35m\]>\[\e[39m>\]\[\e[39m\e[22m\] "
+PS1="\[\e[1m\e[35m\]\u\[\e[90m\]@\h ...\W\[\e[36m\]\$(GITBranch)>\[\e[35m\]>\[\e[39m\]>\[\e[22m\] "
 
 # Load virtualenvwrapper
 source virtualenvwrapper.sh &> /dev/null
