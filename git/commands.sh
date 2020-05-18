@@ -28,5 +28,8 @@ git update-index --no-assume-unchanged [<file> ...]
 git checkout [branch_has_changes] -- [<path> ...]
 #then commit changes
 
+#to reset single file
+git checkout HEAD -- [<file> ..]
+
 #save username and password for gitlab or others
 git config --global credential.helper store
