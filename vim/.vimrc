@@ -51,6 +51,8 @@ set fileformat=unix
 set encoding=utf-8
 " enter spaces when tab is pressed
 set expandtab
+" reduce the time to show git changes and write changes to file
+set updatetime=50
 " break lines when line length increases
 set textwidth=120
 " use 4 spaces to represent tab
