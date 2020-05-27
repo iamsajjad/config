@@ -12,12 +12,14 @@ call plug#begin('~/.vim/plugged')
     Plug 'vifm/vifm.vim'
     Plug 'junegunn/limelight.vim'
     Plug 'tpope/vim-fugitive' " git tools package
+    Plug 'tpope/vim-surround'
     Plug 'vim-airline/vim-airline'
     Plug 'preservim/nerdtree'
 " Syntax
     Plug 'tpope/vim-markdown'
     Plug 'ap/vim-css-color' "Displays a preview of colors with CSS 
     Plug 'vim-scripts/fountain.vim'
+    Plug 'vim-syntastic/syntastic'
 " Colorscheme
     Plug 'fcpg/vim-fahrenheit' " Base theme
     Plug 'kristijanhusak/vim-hybrid-material'
