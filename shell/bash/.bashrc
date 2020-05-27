@@ -54,7 +54,7 @@ alias sha='shasum -a 256 '
 alias ping='ping -c 5'
 
 #Start a web server in any folder.
-alias www='python -m SimpleHTTPServer 8000'
+alias www='python -m http.server 8000 --bind 127.0.0.1'
 
 #Get your network spped download Speedtest-cli and use this alias. You can choose a server closer to your location by using the speedtest-cli --list command.
 alias speed='speedtest-cli --server 2406 --simple'
