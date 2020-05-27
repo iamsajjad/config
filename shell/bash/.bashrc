@@ -68,6 +68,10 @@ alias ipi='ipconfig getifaddr en0'
 #clear the screen.
 alias c='clear'
 
+#Git aliases
+alias ga='git add --all'
+alias gs='git status'
+
 #PS1
 # Show current git branch in prompt.
 GITBranch() {
