@@ -15,7 +15,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
     Plug 'vim-airline/vim-airline'
     Plug 'preservim/nerdtree'
-    Plug 'rust-lang/rust.vim'
+    Plug 'mbbill/undotree'
 " Syntax
     Plug 'tpope/vim-markdown'
     Plug 'ap/vim-css-color' "Displays a preview of colors with CSS 
@@ -33,6 +33,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'endel/vim-github-colorscheme'
     Plug 'morhetz/gruvbox'
     Plug 'sjl/badwolf'
+" Languages
+    Plug 'rust-lang/rust.vim'
 call plug#end()
 
 "-------------------------------------------------------------------------General Settings
