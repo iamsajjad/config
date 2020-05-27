@@ -11,7 +11,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/goyo.vim'
     Plug 'vifm/vifm.vim'
     Plug 'junegunn/limelight.vim'
-    Plug 'scrooloose/vim-fugitive' " git tools package
+    Plug 'tpope/vim-fugitive' " git tools package
+    Plug 'vim-airline/vim-airline'
 " Syntax
     Plug 'tpope/vim-markdown'
     Plug 'ap/vim-css-color' "Displays a preview of colors with CSS 
@@ -25,7 +26,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tomasr/molokai'
     Plug 'cocopon/iceberg.vim'
     Plug 'wolf-dog/nighted.vim'
-    Plug 'https://github.com/endel/vim-github-colorscheme.git'
+    Plug 'endel/vim-github-colorscheme'
     Plug 'morhetz/gruvbox'
     Plug 'sjl/badwolf'
 call plug#end()
