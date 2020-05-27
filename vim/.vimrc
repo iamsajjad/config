@@ -34,6 +34,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'morhetz/gruvbox'
     Plug 'sjl/badwolf'
 " Languages
+    "Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
     Plug 'rust-lang/rust.vim'
 call plug#end()
 
