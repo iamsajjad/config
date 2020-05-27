@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
     Plug 'vim-airline/vim-airline'
     Plug 'preservim/nerdtree'
+    Plug 'rust-lang/rust.vim'
 " Syntax
     Plug 'tpope/vim-markdown'
     Plug 'ap/vim-css-color' "Displays a preview of colors with CSS 
