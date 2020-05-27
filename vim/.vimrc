@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/limelight.vim'
     Plug 'tpope/vim-fugitive' " git tools package
     Plug 'vim-airline/vim-airline'
+    Plug 'preservim/nerdtree'
 " Syntax
     Plug 'tpope/vim-markdown'
     Plug 'ap/vim-css-color' "Displays a preview of colors with CSS 
