@@ -105,6 +105,8 @@ filetype plugin on
 filetype on
 " enable automatic yanking to and pasting from the selection
 set clipboard+=unnamed
+" make NERDTree show hidden files and directories
+let NERDTreeShowHidden=1
 
 "----------------------------------------------------------------------------Color Configs 
 
