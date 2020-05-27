@@ -73,8 +73,10 @@ set whichwrap+=<,>,[,]
 set backspace=indent,eol,start
 " no line wrapping
 set nowrap
-" line numbers
+" Show current line number
 set number
+" Show relative line numbers
+set relativenumber
 " when joining lines, don't insert two spaces after punctuation
 set nojoinspaces
 " Make searches case-sensitive only if they contain upper-case characters
