@@ -163,6 +163,7 @@ nnoremap <C-Up> :resize -1<CR>
 nnoremap <C-Down> :resize +1<CR>
 nnoremap <C-Left> :vertical resize -1<CR>
 nnoremap <C-Right> :vertical resize +1<CR>
+nnoremap <C-e> :winc =<CR>
 
 "------------------------------------------------------------------------------------------------Remember Cursor Postion
 
