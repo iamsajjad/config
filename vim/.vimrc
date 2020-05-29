@@ -42,15 +42,14 @@ call plug#end()
 
 set nocompatible                  " must be first, changes behaviour of other settings
 set t_Co=256                      " 256 colors
-syntax on                         " syntax highlighting
 set fileformat=unix               " sane text files
 set encoding=utf-8                " file encoding
-set expandtab                     " enter spaces when tab is pressed
 set updatetime=50                 " reduce the time to show git changes and write changes to file
 set textwidth=120                 " break lines when line length increases
 set tabstop=4                     " use 4 spaces to represent tab
 set softtabstop=4
 set shiftwidth=4                  " number of spaces to use for auto indent
+set expandtab                     " enter spaces when tab is pressed
 set autoindent                    " copy indent from current line when starting a new line
 set selection=exclusive           " allow cursor to be positioned one char past end of line
 set hidden                        " allow backgrounding buffers without writing them
@@ -77,7 +76,7 @@ set clipboard+=unnamed            " enable automatic yanking to and pasting from
 let NERDTreeShowHidden=1          " make NERDTree show hidden files and directories
 filetype plugin on                " enables filetype specific plugins
 filetype on                       " enables filetype detection
-
+syntax on                         " syntax highlighting
 "make sure highlighting works all the way down long files
 autocmd BufEnter * :syntax sync fromstart
 
