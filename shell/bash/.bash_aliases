@@ -51,8 +51,8 @@ alias bd='cd "$OLDPWD"'
 alias rmd='/bin/rm  --recursive --force --verbose '
 
 # Alias's for multiple directory listing commands
-alias la='ls -Alh --group-directories-first --color=always' # show hidden files
-alias ls='ls -aFh --group-directories-first --color=always' # add colors and file type extensions
+alias ls='ls -a --g --color=always'                         # add colors and file type extensions
+alias la='ls -Alh --g --color=always'                       # show hidden files
 alias lx='ls -lXBh'                                         # sort by extension
 alias lk='ls -lSrh'                                         # sort by size
 alias lc='ls -lcrh'                                         # sort by change time
