@@ -107,7 +107,8 @@ alias cg='cd `git rev-parse --show-toplevel`'               #takes you to the to
 alias ve='python3 -m venv ./venv'
 alias va='source ./venv/bin/activate'
 alias www='python -m http.server 8000 --bind 127.0.0.1'     # start a web server in any folder.
-alias json="python -m json.tool"                            # Json tools (pipe unformatted to these to nicely format the JSON)
+alias json='python -m json.tool'                            # Json tools (pipe unformatted to these to nicely format the JSON)
+alias rpyc='find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf'
 
 # SSH helper
 alias sshclear="rm ~/.ssh/multiplex/* -f && echo SSH connection cache cleared;"
