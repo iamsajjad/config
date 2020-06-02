@@ -45,7 +45,9 @@ set t_Co=256                      " 256 colors
 set fileformat=unix               " sane text files
 set encoding=utf-8                " file encoding
 set updatetime=50                 " reduce the time to show git changes and write changes to file
-set textwidth=120                 " break lines when line length increases
+set textwidth=120                 " break lines when line length increases, to show column set colorcolumn=121
+set fo-=t                         " don't automatically wrap text when typing
+set nowrap                        " don't automatically wrap on load
 set tabstop=4                     " use 4 spaces to represent tab
 set softtabstop=4
 set shiftwidth=4                  " number of spaces to use for auto indent
@@ -56,7 +58,6 @@ set hidden                        " allow backgrounding buffers without writing 
 set scrolloff=3                   " Keep more context when scrolling off the end of a buffer
 set whichwrap+=<,>,[,]            " allow cursor keys to go right off end of one line, onto start of next
 set backspace=indent,eol,start    " allow backspacing over everything in insert mode
-set nowrap                        " no line wrapping
 set number                        " Show current line number
 set relativenumber                " Show relative line numbers
 set nojoinspaces                  " when joining lines, don't insert two spaces after punctuation
@@ -77,8 +78,25 @@ let NERDTreeShowHidden=1          " make NERDTree show hidden files and director
 filetype plugin on                " enables filetype specific plugins
 filetype on                       " enables filetype detection
 syntax on                         " syntax highlighting
+
+"----------------------------------------------------------------------------------------------------------Auto Commands
+
 "make sure highlighting works all the way down long files
 autocmd BufEnter * :syntax sync fromstart
+
+" on save reload .vimrc and do :AirlineRefresh
+function! RefreshUI()
+  if exists(':AirlineRefresh')
+    AirlineRefresh
+  else
+    " Clear & redraw the screen, then redraw all statuslines.
+    redraw!
+    redrawstatus!
+  endif
+endfunction
+
+" Automatic reloading of .vimrc
+autocmd BufWritePost .vimrc source $MYVIMRC | :call RefreshUI()
 
 "---------------------------------------------------------------------------------------------------------Undo Directory
 
@@ -107,8 +125,14 @@ map <F5> :colorscheme molokai<CR>
 
 "--------------------------------------------------------------------------------------------------Key Binding 'Mapping'
 
+" Rebind <Leader> key
+let mapleader = ","
 " map key to dismiss search highlightedness
-map <bs> :oh<CR>
+map <bs> :noh<CR>
+" map sort function to a key
+vnoremap <Leader>s :sort<CR>
+vnoremap < <gv  " better indentation
+vnoremap > >gv  " better indentation
 " grep for word under cursor
 noremap <Leader>g :grep -rw '<C-r><C-w>' .<CR>
 " aliases for window switching (browser captures ctrl-w)
