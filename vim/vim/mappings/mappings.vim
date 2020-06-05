@@ -1,8 +1,6 @@
 
 "--------------------------------------------------------------------------------------------------Key Binding 'Mapping'
 
-" Rebind <Leader> key
-let mapleader = ","
 " map key to dismiss search highlightedness
 map <bs> :noh<CR>
 " map sort function to a key
