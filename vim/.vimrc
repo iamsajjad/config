@@ -12,7 +12,7 @@ call plug#begin('~/.vim/plugged')
 source $HOME/.config/vim/plugins/plugins.vim                         " plugins file
 source $HOME/.config/vim/plugins/syntaxes.vim                        " syntaxes file
 source $HOME/.config/vim/plugins/languages.vim                       " languages file
-source $HOME/.config/vim/plugins/colorschemes.vim                    " colorschemes file
+source $HOME/.config/vim/plugins/schemes.vim                         " schemes file
 call plug#end()
 " plugins pluginsConfigs files
 source $HOME/.config/vim/plugins/pluginsConfigs/airline.vim          " airline file 
@@ -22,9 +22,13 @@ source $HOME/.config/vim/plugins/pluginsConfigs/gitgutter.vim        " gitgutter
 source $HOME/.config/vim/schemes/schemes.vim                         " configs file
 " configs files
 source $HOME/.config/vim/configs/configs.vim                         " configs file
+source $HOME/.config/vim/configs/leader.vim                          " leader file
 source $HOME/.config/vim/configs/cursor.vim                          " cursor file
 " mappings files
 source $HOME/.config/vim/mappings/mappings.vim                       " mappings file
+source $HOME/.config/vim/mappings/iModeMappings.vim                  " insert mode mappings file
+source $HOME/.config/vim/mappings/nModeMappings.vim                  " normal mode mappings file
+source $HOME/.config/vim/mappings/vModeMappings.vim                  " visual mode mappings file
 " functions files
 source $HOME/.config/vim/functions/functions.vim                     " functions file
 source $HOME/.config/vim/functions/splits.vim                        " splits file
