@@ -15,8 +15,9 @@ source $HOME/.config/vim/plugins/languages.vim                       " languages
 source $HOME/.config/vim/plugins/schemes.vim                         " schemes file
 call plug#end()
 " plugins pluginsConfigs files
-source $HOME/.config/vim/plugins/pluginsConfigs/airline.vim          " airline file 
+source $HOME/.config/vim/plugins/pluginsConfigs/airline.vim          " airline file
 source $HOME/.config/vim/plugins/pluginsConfigs/undotree.vim         " undotree file 
+source $HOME/.config/vim/plugins/pluginsConfigs/nerdtree.vim         " nerdtree file
 source $HOME/.config/vim/plugins/pluginsConfigs/gitgutter.vim        " gitgutter file 
 " schemes files
 source $HOME/.config/vim/schemes/schemes.vim                         " configs file
@@ -29,6 +30,7 @@ source $HOME/.config/vim/mappings/mappings.vim                       " mappings 
 source $HOME/.config/vim/mappings/iModeMappings.vim                  " insert mode mappings file
 source $HOME/.config/vim/mappings/nModeMappings.vim                  " normal mode mappings file
 source $HOME/.config/vim/mappings/vModeMappings.vim                  " visual mode mappings file
+source $HOME/.config/vim/mappings/cModeMappings.vim                  " command-line mode mappings file
 " functions files
 source $HOME/.config/vim/functions/functions.vim                     " functions file
 source $HOME/.config/vim/functions/splits.vim                        " splits file
