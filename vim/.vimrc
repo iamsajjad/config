@@ -33,5 +33,8 @@ source $HOME/.config/vim/mappings/vModeMappings.vim                  " visual mo
 source $HOME/.config/vim/mappings/cModeMappings.vim                  " command-line mode mappings file
 " functions files
 source $HOME/.config/vim/functions/functions.vim                     " functions file
+source $HOME/.config/vim/functions/refresh.vim                       " refresh file
 source $HOME/.config/vim/functions/splits.vim                        " splits file
+" automatic files
+source $HOME/.config/vim/automatic/automatic.vim                     " automatic file
 
