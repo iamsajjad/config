@@ -40,22 +40,3 @@ filetype plugin on                " enables filetype specific plugins
 filetype on                       " enables filetype detection
 syntax on                         " syntax highlighting
 
-"----------------------------------------------------------------------------------------------------------Auto Commands
-
-"make sure highlighting works all the way down long files
-autocmd BufEnter * :syntax sync fromstart
-
-" on save reload .vimrc and do :AirlineRefresh
-function! RefreshUI()
-  if exists(':AirlineRefresh')
-    AirlineRefresh
-  else
-    " Clear & redraw the screen, then redraw all statuslines.
-    redraw!
-    redrawstatus!
-  endif
-endfunction
-
-" Automatic reloading of .vimrc
-autocmd BufWritePost .vimrc source $MYVIMRC | :call RefreshUI()
-
