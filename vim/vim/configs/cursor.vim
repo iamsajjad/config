@@ -7,7 +7,7 @@ if has("autocmd")
     " 'cindent' is on in C files, etc.
     " Also load indent files, to automatically do language-dependent indenting.
     filetype plugin indent on
-    
+
     " When editing a file, always jump to the last known cursor position.
     " Don't do it when the position is invalid or when inside an event handler
     " (happens when dropping a file on gvim).

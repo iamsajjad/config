@@ -1,12 +1,12 @@
 " .vimrc
 "
-" create .config directory if it not exists                                                                                                                                                                                               
+" create .config directory if it not exists
 if !isdirectory($HOME."/.config")
     call mkdir($HOME."/.config", "", 0755)
 endif
 "
 " copy vim/ directory to $HOME/.config/
-" 
+"
 " plugins files
 call plug#begin('~/.vim/plugged')
 source $HOME/.config/vim/plugins/plugins.vim                         " plugins file
@@ -16,9 +16,9 @@ source $HOME/.config/vim/plugins/schemes.vim                         " schemes f
 call plug#end()
 " plugins pluginsConfigs files
 source $HOME/.config/vim/plugins/pluginsConfigs/airline.vim          " airline file
-source $HOME/.config/vim/plugins/pluginsConfigs/undotree.vim         " undotree file 
+source $HOME/.config/vim/plugins/pluginsConfigs/undotree.vim         " undotree file
 source $HOME/.config/vim/plugins/pluginsConfigs/nerdtree.vim         " nerdtree file
-source $HOME/.config/vim/plugins/pluginsConfigs/gitgutter.vim        " gitgutter file 
+source $HOME/.config/vim/plugins/pluginsConfigs/gitgutter.vim        " gitgutter file
 " schemes files
 source $HOME/.config/vim/schemes/schemes.vim                         " configs file
 " configs files
