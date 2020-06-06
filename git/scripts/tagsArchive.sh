@@ -1,6 +1,7 @@
-#cd repo/
 
-for tag in $(git tag) 
+# archive tags as .xz files
+
+for tag in $(git tag)
 do
     # if you want to suppress @... part
     if [[ $tag != *"rc"* ]] && [[ $tag != *"beta"* ]] ; then
@@ -10,3 +11,4 @@ do
         git archive "$tag" | xz -z > gitlab-"$tag".tar.xz
     fi
 done
+

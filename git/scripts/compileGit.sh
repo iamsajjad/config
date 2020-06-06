@@ -21,3 +21,4 @@ make all doc info
 sudo make install install-doc install-html install-info
 
 #from more info go to https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
