@@ -6,11 +6,11 @@
 " Plugins
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/goyo.vim'
-Plug 'vifm/vifm.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'tpope/vim-fugitive' " git tools package
-Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'preservim/nerdtree'
 Plug 'mbbill/undotree'
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'vifm/vifm.vim'
+Plug 'vim-airline/vim-airline'
 
