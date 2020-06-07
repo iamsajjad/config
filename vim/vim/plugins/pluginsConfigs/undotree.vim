@@ -1,13 +1,14 @@
 
 "-----------------------------------------------------------------------------------------------------------Undo Configs
 
-" Let's save undo info!
+" create undoDir directory
 if !isdirectory($HOME."/.vim")
     call mkdir($HOME."/.vim", "", 0770)
 endif
-if !isdirectory($HOME."/.vim/undo-dir")
-    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+if !isdirectory($HOME."/.vim/undoDir")
+    call mkdir($HOME."/.vim/undoDir", "", 0700)
 endif
-set undodir=~/.vim/undo-dir
+
+set undodir=~/.vim/undoDir
 set undofile
 
