@@ -21,6 +21,8 @@ source $HOME/.config/vim/plugins/pluginsConfigs/nerdtree.vim         " nerdtree 
 source $HOME/.config/vim/plugins/pluginsConfigs/gitgutter.vim        " gitgutter file
 " schemes files
 source $HOME/.config/vim/schemes/schemes.vim                         " configs file
+" schemes schemesConfigs files
+source $HOME/.config/vim/schemes/schemesConfigs/one.vim              " one file
 " configs files
 source $HOME/.config/vim/configs/configs.vim                         " configs file
 source $HOME/.config/vim/configs/leader.vim                          " leader file
