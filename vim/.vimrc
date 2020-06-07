@@ -15,6 +15,7 @@ source $HOME/.config/vim/plugins/languages.vim                       " languages
 source $HOME/.config/vim/plugins/schemes.vim                         " schemes file
 call plug#end()
 " plugins pluginsConfigs files
+source $HOME/.config/vim/plugins/pluginsConfigs/plug.vim             " plug file
 source $HOME/.config/vim/plugins/pluginsConfigs/airline.vim          " airline file
 source $HOME/.config/vim/plugins/pluginsConfigs/undotree.vim         " undotree file
 source $HOME/.config/vim/plugins/pluginsConfigs/nerdtree.vim         " nerdtree file
