@@ -5,6 +5,9 @@ cp .vimrc ~/
 cp -R vim/ ~/.config/
 cp -R dotvim/. ~/.vim/
 
+# copy configs files for neovim
+cp -R nvim/ ~/.config/
+
 # install vim plug plugins manager
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
