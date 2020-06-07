@@ -1,7 +1,6 @@
 "----------------------------------------------------------------------------------------------------------------Plugins
 
 " Colorscheme
-
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'ajh17/Spacegray.vim'
 Plug 'chriskempson/base16-vim'
@@ -13,3 +12,4 @@ Plug 'morhetz/gruvbox'
 Plug 'sjl/badwolf'
 Plug 'tomasr/molokai'
 Plug 'wolf-dog/nighted.vim'
+
