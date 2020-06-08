@@ -12,4 +12,5 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vifm/vifm.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'vimwiki/vimwiki'
 

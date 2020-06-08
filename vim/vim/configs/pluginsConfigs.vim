@@ -11,6 +11,7 @@ source $HOME/.config/vim/plugins/pluginsConfigs/plugins/plug.vim                
 source $HOME/.config/vim/plugins/pluginsConfigs/plugins/surround.vim            " surround configs file
 source $HOME/.config/vim/plugins/pluginsConfigs/plugins/undotree.vim            " undotree configs file
 source $HOME/.config/vim/plugins/pluginsConfigs/plugins/vifm.vim                " vifm configs file
+source $HOME/.config/vim/plugins/pluginsConfigs/plugins/vimWiki.vim             " vimWiki configs file
 
 " languages plugins configs
 source $HOME/.config/vim/plugins/pluginsConfigs/languages/python.vim            " python configs file
