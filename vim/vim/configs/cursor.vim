@@ -1,5 +1,5 @@
 
-"------------------------------------------------------------------------------------------------Remember Cursor Postion
+"---------------------------------------------------------------------------------------------------------cursor Configs
 
 if has("autocmd")
     " Enable file type detection.
@@ -29,4 +29,12 @@ set tags=./tags,tags
 " set tags+=./tags;/
 " recursively search cwd's parent dirs for tags file
 set tags+=tags;/
+
+"-----------------------------------------------------------------------------------------------------cursorLine Configs
+
+highlight CursorLine cterm=none term=none ctermbg=234 guibg=#303000
+
+"----------------------------------------------------------------------------------------------------colorColumn Configs
+
+highlight ColorColumn ctermbg=232 guibg=#303000
 
