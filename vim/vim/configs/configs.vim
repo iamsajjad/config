@@ -7,7 +7,7 @@ set fileformat=unix               " sane text files
 set encoding=utf-8                " file encoding
 set updatetime=50                 " reduce the time to show git changes and write changes to file
 set textwidth=120                 " break lines when line length increases
-set colorcolumn=120               " show limit column line
+set colorcolumn=121               " show limit column line
 set fo-=t                         " don't automatically wrap text when typing
 set nowrap                        " don't automatically wrap on load
 set tabstop=4                     " use 4 spaces to represent tab
