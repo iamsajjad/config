@@ -98,12 +98,13 @@ alias ungz='tar -xvzf'
 alias grep="grep --color"
 alias grepp="grep -P --color"
 
-#Git aliases
+# Git aliases
 alias ga='git add --all'
+alias gd='git diff'
 alias gs='git status'
 alias cg='cd `git rev-parse --show-toplevel`'               #takes you to the top of your Git project directory
 
-#Python
+# Python
 alias ve='python3 -m venv ./venv'
 alias va='source ./venv/bin/activate'
 alias www='python -m http.server 8000 --bind 127.0.0.1'     # start a web server in any folder.
