@@ -6,8 +6,8 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Bash aliases file
-if [ -e $HOME/.bash_aliases ]; then
-    source $HOME/.bash_aliases
+if [ -e $HOME/.config/bash/bashAliases.sh ]; then
+    source $HOME/.config/bash/bashAliases.sh
 fi
 
 #----------------------------------------------------------------------------------------------------------------Exports
