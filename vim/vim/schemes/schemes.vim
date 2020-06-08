@@ -4,5 +4,5 @@
 " theme mode
 set background=dark
 " Default theme
-colorscheme fahrenheit
+colorscheme one
 
