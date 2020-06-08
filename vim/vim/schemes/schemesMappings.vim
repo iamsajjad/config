@@ -1,10 +1,6 @@
 
-"----------------------------------------------------------------------------------------------------------Color Configs
+"-----------------------------------------------------------------------------------------------schemes mappings configs
 
-" theme mode
-set background=dark
-" Default theme
-colorscheme fahrenheit
 " Change theme
 map <F1> :colorscheme fahrenheit<CR>
 map <F2> :colorscheme one<CR>
