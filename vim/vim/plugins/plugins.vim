@@ -1,3 +1,4 @@
+
 "----------------------------------------------------------------------------------------------------------------Plugins
 
 " Install vim Package Manager vim-plug GitHub [https://github.com/junegunn/vim-plug.git]

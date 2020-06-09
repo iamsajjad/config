@@ -2,9 +2,9 @@
 "-------------------------------------------------------------------------------------------------------NERDTree Configs
 
 " NERDTree mappings
-map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark
-map <leader>nf :NERDTreeFind<cr>
+map <Leader>nn :NERDTreeToggle<CR>
+map <Leader>nb :NERDTreeFromBookmark
+map <Leader>nf :NERDTreeFind<CR>
 
 " make NERDTree show hidden files and directories
 let NERDTreeShowHidden=1
