@@ -1,9 +1,6 @@
 
 "---------------------------------------------------------------------------------------------------Normal Mode Mappings
 
-" grep for word under cursor
-noremap <Leader>g :grep -rw '<C-r><C-w>' .<CR>
-
 " taggle between background dark and light
 map <Leader>. :call ToggleBackground()<CR>
 
