@@ -14,6 +14,7 @@ set tabstop=4                     " use 4 spaces to represent tab
 set softtabstop=4
 set shiftwidth=4                  " number of spaces to use for auto indent
 set expandtab                     " enter spaces when tab is pressed
+set autochdir                     " change directory to opened file directory
 set autoindent                    " copy indent from current line when starting a new line
 set selection=exclusive           " allow cursor to be positioned one char past end of line
 set hidden                        " allow backgrounding buffers without writing them
