@@ -4,7 +4,10 @@
 " grep for word under cursor
 noremap <Leader>g :grep -rw '<C-r><C-w>' .<CR>
 
-" Taggle Between Split Files
+" taggle between background dark and light
+map <Leader>. :call ToggleBackground()<CR>
+
+" taggle between split files
 nnoremap <Tab> <C-w>w
 
 " resize split files using h, j, k, l
