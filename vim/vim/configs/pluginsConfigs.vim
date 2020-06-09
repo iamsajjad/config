@@ -9,6 +9,7 @@ source $HOME/.config/vim/plugins/pluginsConfigs/plugins/goyo.vim                
 source $HOME/.config/vim/plugins/pluginsConfigs/plugins/limelight.vim           " limelight configs file
 source $HOME/.config/vim/plugins/pluginsConfigs/plugins/nerdtree.vim            " nerdtree configs file
 source $HOME/.config/vim/plugins/pluginsConfigs/plugins/plug.vim                " plug configs file
+source $HOME/.config/vim/plugins/pluginsConfigs/plugins/supertab.vim            " supertab configs file
 source $HOME/.config/vim/plugins/pluginsConfigs/plugins/surround.vim            " surround configs file
 source $HOME/.config/vim/plugins/pluginsConfigs/plugins/undotree.vim            " undotree configs file
 source $HOME/.config/vim/plugins/pluginsConfigs/plugins/vifm.vim                " vifm configs file
