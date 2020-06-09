@@ -17,6 +17,7 @@ source $HOME/.config/vim/plugins/pluginsConfigs/plugins/vimWiki.vim             
 " languages plugins configs
 source $HOME/.config/vim/plugins/pluginsConfigs/languages/javascript.vim        " javascript configs file
 source $HOME/.config/vim/plugins/pluginsConfigs/languages/python.vim            " python configs file
+source $HOME/.config/vim/plugins/pluginsConfigs/languages/ruby.vim              " ruby configs file
 source $HOME/.config/vim/plugins/pluginsConfigs/languages/rust.vim              " rust configs file
 
 " schemes plugins configs
