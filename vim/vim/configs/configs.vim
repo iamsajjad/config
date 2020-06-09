@@ -29,6 +29,8 @@ set incsearch                     " show search matches as the search pattern is
 set wrapscan                      " search-next wraps back to start of file
 set hlsearch
 set splitbelow splitright         " new spilt [vs right] or [hs below]
+set nospell                       " do not allow spell checking
+set spelllang=en_us               " files that allow spell check set language to english
 set wildmenu                      " make tab completion for files/buffers act like bash
 set ruler                         " highlight last search matches
 set cursorline                    " highlight cursor line
