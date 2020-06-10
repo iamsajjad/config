@@ -12,7 +12,7 @@ cp -R nvim/ ~/.config/
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # install plugins
-vim +PlugInstall +qall
+vim +PlugInstall +PlugUpdate +PlugUpgrade +qall
 
 echo "VIM configs done."
 
