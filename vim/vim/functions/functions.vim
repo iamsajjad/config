@@ -1,7 +1,10 @@
 
 "--------------------------------------------------------------------------------------------------------------Functions
 
-source $HOME/.config/vim/functions/functions/background.vim                    " background file
-source $HOME/.config/vim/functions/functions/refresh.vim                       " refresh file
-source $HOME/.config/vim/functions/functions/splits.vim                        " splits file
+" functionsDirectory
+if isdirectory($HOME."/.config/vim/functions/functionsDirectory")
+  for mappingsFile in split(glob('$HOME/.config/vim/functions/functionsDirectory/*.vim'), '\n')
+    execute 'source ' mappingsFile
+  endfor
+endif
 
