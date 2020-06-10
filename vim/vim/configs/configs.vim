@@ -39,6 +39,7 @@ set showcmd                       " display number of selected chars, lines, or 
 set showmatch                     " show matching brackets, etc, for 1/10th of a second
 set matchtime=1
 set clipboard+=unnamed            " enable automatic yanking to and pasting from the selection
+set background=dark               " set dark background as default
 filetype plugin on                " enables filetype specific plugins
 filetype on                       " enables filetype detection
 syntax on                         " syntax highlighting
