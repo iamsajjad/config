@@ -21,7 +21,6 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 " schemes files
 source $HOME/.config/vim/schemes/schemes.vim                         " schemes file
-source $HOME/.config/vim/schemes/schemesMappings.vim                 " schemes mappings file
 " plugins pluginsConfigs files
 source $HOME/.config/vim/configs/pluginsConfigs.vim                  " plugins configs file
 " functions files
