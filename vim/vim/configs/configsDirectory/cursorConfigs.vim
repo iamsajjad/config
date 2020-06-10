@@ -1,5 +1,5 @@
 
-"---------------------------------------------------------------------------------------------------------cursor Configs
+"---------------------------------------------------------------------------------------------------------Cursor Configs
 
 " remeber cursor position
 if has("autocmd")
@@ -19,5 +19,4 @@ endif
 " places to look for tags files:
 set tags=./tags,tags
 set tags+=tags;/
-
 
