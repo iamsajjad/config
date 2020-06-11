@@ -7,7 +7,7 @@ if isdirectory($HOME."/.config/vim")
   source $HOME/.config/vim/configs/configs.vim                         " configs file
   " plugins files
   call plug#begin("~/.vim/plugged")
-    source $HOME/.config/vim/plugins/plugins.vim                       " plugins file
+    source $HOME/.config/vim/plugins/bundles.vim                       " plugins file
     source $HOME/.config/vim/plugins/syntaxes.vim                      " syntaxes file
     source $HOME/.config/vim/plugins/languages.vim                     " languages file
     source $HOME/.config/vim/plugins/schemes.vim                       " schemes file

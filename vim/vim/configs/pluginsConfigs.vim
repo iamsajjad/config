@@ -3,9 +3,9 @@
 
 " pluginsConfigs directory
 if isdirectory($HOME."/.config/vim/plugins/pluginsConfigs")
-  " plugins configs
-  if isdirectory($HOME."/.config/vim/plugins/pluginsConfigs/plugins")
-    for configsFile in split(glob($HOME."/.config/vim/plugins/pluginsConfigs/plugins/*.vim"), "\n")
+  " bundles configs
+  if isdirectory($HOME."/.config/vim/plugins/pluginsConfigs/bundles")
+    for configsFile in split(glob($HOME."/.config/vim/plugins/pluginsConfigs/bundles/*.vim"), "\n")
       execute "source " configsFile
     endfor
   endif
