@@ -2,7 +2,7 @@
 "--------------------------------------------------------------------------------------------------------Schemes Configs
 
 " default colorscheme
-colorscheme one
+silent! colorscheme one
 
 " schemesConfigs
 if isdirectory($HOME."/.config/vim/schemes/schemesConfigs")
