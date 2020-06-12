@@ -8,6 +8,3 @@ if isdirectory($HOME."/.config/vim/configs/configsDirectory")
   endfor
 endif
 
-" load pluginsConfigs.vim file
-source $HOME/.config/vim/configs/pluginsConfigs.vim
-
