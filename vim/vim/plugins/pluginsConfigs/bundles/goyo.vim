@@ -2,7 +2,7 @@
 "-----------------------------------------------------------------------------------------------------------Goyo Configs
 
 " enter goyo configs
-function! s:goyo_enter()
+function! s:goyoEnter()
   if executable('tmux') && strlen($TMUX)
     silent !tmux set status off
     silent !tmux list-panes -F '\#F' | grep -q Z || tmux resize-pane -Z
@@ -15,7 +15,7 @@ function! s:goyo_enter()
 endfunction
 
 " leave goyo configs
-function! s:goyo_leave()
+function! s:goyoLeave()
   if executable('tmux') && strlen($TMUX)
     silent !tmux set status on
     silent !tmux list-panes -F '\#F' | grep -q Z && tmux resize-pane -Z
@@ -27,8 +27,8 @@ function! s:goyo_leave()
   " ...
 endfunction
 
-autocmd! User GoyoEnter nested call <SID>goyo_enter()
-autocmd! User GoyoLeave nested call <SID>goyo_leave()
+autocmd! User GoyoEnter nested call <SID>goyoEnter()
+autocmd! User GoyoLeave nested call <SID>goyoLeave()
 
 " mappings
 nnoremap <Leader><Enter> :Goyo<CR>
