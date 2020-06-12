@@ -4,6 +4,9 @@
 " default colorscheme
 silent! colorscheme one
 
+" comment highlight
+highlight Comment cterm=italic gui=italic
+
 " for more colors
 if (empty($TMUX))
   " enable true color in neovim
