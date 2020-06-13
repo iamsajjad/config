@@ -1,5 +1,5 @@
 
-"------------------------------------------------------------------------------------------------------------refresh.vim
+" ... refresh.vim
 
 " on save reload .vimrc and do :AirlineRefresh
 function! RefreshUI()

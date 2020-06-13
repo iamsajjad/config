@@ -1,5 +1,5 @@
 
-"---------------------------------------------------------------------------------------------------------fzfConfigs.vim
+" ... fzfConfigs.vim
 
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>g :GFiles<CR>

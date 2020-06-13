@@ -1,5 +1,5 @@
 
-"----------------------------------------------------------------------------------------------------undoTreeConfigs.vim
+" ... undoTreeConfigs.vim
 
 " create undoDir directory
 if !isdirectory($HOME."/.vim")

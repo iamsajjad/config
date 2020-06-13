@@ -1,5 +1,5 @@
 
-"--------------------------------------------------------------------------------------------------------plugConfigs.vim
+" ... plugConfigs.vim
 
 " clone vim plug.vim file for vim
 if empty(glob('~/.vim/autoload/plug.vim'))

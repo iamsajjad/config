@@ -1,5 +1,5 @@
 
-"-------------------------------------------------------------------------------------------------------------splits.vim
+" ... splits.vim
 
 function! MarkWindowSwap()
   let g:markedWinNum = winnr()

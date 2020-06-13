@@ -1,5 +1,5 @@
 
-"------------------------------------------------------------------------------------------------------------schemes.vim
+" ... schemes.vim
 
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'ajh17/Spacegray.vim'

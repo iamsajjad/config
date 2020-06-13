@@ -1,5 +1,5 @@
 
-"-----------------------------------------------------------------------------------------------------------syntaxes.vim
+" ... syntaxes.vim
 
 Plug 'ap/vim-css-color'
 Plug 'ryanoasis/vim-devicons'

@@ -1,5 +1,5 @@
 
-"------------------------------------------------------------------------------------------------------cursorConfigs.vim
+" ... cursorConfigs.vim
 
 " remeber cursor position
 if has("autocmd")

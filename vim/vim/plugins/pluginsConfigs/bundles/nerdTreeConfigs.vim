@@ -1,5 +1,5 @@
 
-"----------------------------------------------------------------------------------------------------nerdTreeConfigs.vim
+" ... nerdTreeConfigs.vim
 
 " NERDTree mappings
 map <Leader>nn :NERDTreeToggle<CR>

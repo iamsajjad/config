@@ -1,5 +1,5 @@
 
-"------------------------------------------------------------------------------------------------------------mapping.vim
+" ... mapping.vim
 
 " mappingsDirectory
 if isdirectory($HOME."/.config/vim/mappings/mappingsDirectory")

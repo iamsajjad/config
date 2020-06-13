@@ -1,5 +1,5 @@
 
-"---------------------------------------------------------------------------------------------------limeLightConfigs.vim
+" ... limeLightConfigs.vim
 
 " color name or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'

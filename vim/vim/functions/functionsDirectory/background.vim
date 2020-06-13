@@ -1,5 +1,5 @@
 
-"---------------------------------------------------------------------------------------------------------background.vim
+" ... background.vim
 
 " chack background and change it
 function ToggleBackground()

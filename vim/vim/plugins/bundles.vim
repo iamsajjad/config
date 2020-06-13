@@ -1,5 +1,5 @@
 
-"------------------------------------------------------------------------------------------------------------bundles.vim
+" ... bundles.vim
 
 Plug 'airblade/vim-gitgutter'
 Plug 'ervandew/supertab'

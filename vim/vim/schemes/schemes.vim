@@ -1,5 +1,5 @@
 
-"------------------------------------------------------------------------------------------------------------schemes.vim
+" ... schemes.vim
 
 " default colorscheme
 silent! colorscheme one

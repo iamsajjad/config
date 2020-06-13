@@ -1,5 +1,5 @@
 
-"--------------------------------------------------------------------------------------------------------setsConfigs.vim
+" ... setsConfigs.vim
 
 set nocompatible                  " must be first, changes behaviour of other settings
 set t_Co=256                      " 256 colors

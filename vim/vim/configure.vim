@@ -1,5 +1,5 @@
 
-"----------------------------------------------------------------------------------------------------------configure.vim
+" ... configure.vim
 
 " pluginsConfigs directory
 if isdirectory($HOME."/.config/vim/plugins/pluginsConfigs")

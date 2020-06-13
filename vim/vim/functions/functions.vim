@@ -1,5 +1,5 @@
 
-"----------------------------------------------------------------------------------------------------------functions.vim
+" ... functions.vim
 
 " functionsDirectory
 if isdirectory($HOME."/.config/vim/functions/functionsDirectory")

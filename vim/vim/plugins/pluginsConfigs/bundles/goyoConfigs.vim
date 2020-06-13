@@ -1,5 +1,5 @@
 
-"--------------------------------------------------------------------------------------------------------goyoConfigs.vim
+" ... goyoConfigs.vim
 
 " enter goyo configs
 function! s:goyoEnter()

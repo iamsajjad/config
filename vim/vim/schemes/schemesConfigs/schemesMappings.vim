@@ -1,5 +1,5 @@
 
-"----------------------------------------------------------------------------------------------------schemesMappings.vim
+" ... schemesMappings.vim
 
 " colors mappings
 map <F1> :colorscheme one<CR>

@@ -1,5 +1,5 @@
 
-"------------------------------------------------------------------------------------------------------vModeMappings.vim
+" ... vModeMappings.vim
 
 " map sort function to a key
 vnoremap <Leader>s :sort<CR>
