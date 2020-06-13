@@ -1,0 +1,3 @@
+
+" ... macroConfigs.vim
+

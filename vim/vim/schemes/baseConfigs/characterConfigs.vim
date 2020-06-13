@@ -1,0 +1,3 @@
+
+" ... characterConfigs.vim
+

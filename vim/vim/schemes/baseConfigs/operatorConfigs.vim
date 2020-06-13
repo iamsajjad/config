@@ -1,0 +1,3 @@
+
+" ... operatorConfigs.vim
+

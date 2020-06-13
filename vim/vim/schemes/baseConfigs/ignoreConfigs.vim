@@ -1,0 +1,3 @@
+
+" ... ignoreConfigs.vim
+

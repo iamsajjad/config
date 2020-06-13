@@ -1,0 +1,3 @@
+
+" ... constantConfigs.vim
+
