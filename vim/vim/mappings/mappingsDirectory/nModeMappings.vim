@@ -1,5 +1,5 @@
 
-"---------------------------------------------------------------------------------------------------Normal Mode Mappings
+"------------------------------------------------------------------------------------------------------nModeMappings.vim
 
 " taggle between background dark and light
 map <Leader>. :call ToggleBackground()<CR>

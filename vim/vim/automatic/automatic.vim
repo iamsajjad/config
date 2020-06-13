@@ -1,5 +1,5 @@
 
-"--------------------------------------------------------------------------------------------------------------Automatic
+"----------------------------------------------------------------------------------------------------------automatic.vim
 
 " make sure highlighting works all the way down long files
 autocmd BufEnter * :syntax sync fromstart
