@@ -1,3 +1,0 @@
-
-" ... commentsConfigs.vim
-

@@ -1,3 +1,0 @@
-
-" ... schemesHighLight.vim
-
