@@ -1,0 +1,43 @@
+
+
+make
+    bash/aliases.sh
+    bash/export.sh
+    bash/prompt.sh
+    ls not include dot files and directories
+    add cdc [cd && clear]
+    add cdc.. [cd .. && clear]
+
+    hex vim plug
+
+    add README.md in vim/vim/
+    change license name
+    write README.md
+    vim plugins vim-go, vim-snippets
+
+
+
+
+
+the blue colorscheme
+
+"these lines are suggested to be at the top of every colorscheme
+hi clear
+if exists("syntax_on")
+  syntax reset
+endif
+
+"Load the 'base' colorscheme - the one you want to alter
+runtime colors/blue.vim
+
+"Override the name of the base colorscheme with the name of this custom one
+let g:colors_name = "my-blue"
+
+"Clear the colors for any items that you don't like
+hi clear StatusLine
+hi clear StatusLineNC
+
+"Set up your new & improved colors
+hi StatusLine guifg=black guibg=white
+hi StatusLineNC guifg=LightCyan guibg=blue gui=bold
+
