@@ -5,3 +5,4 @@ cp .bashrc ~/
 cp -R bash/ ~/.config/
 
 echo "BASH configs done."
+
