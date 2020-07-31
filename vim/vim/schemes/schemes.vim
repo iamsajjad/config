@@ -2,7 +2,7 @@
 " ... schemes.vim
 
 " default colorscheme
-silent! colorscheme one
+silent! colorscheme blackhole
 
 " comment highlight
 highlight Comment cterm=italic gui=italic

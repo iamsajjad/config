@@ -1,0 +1,3 @@
+
+" ... blackHoleConfigs.vim
+
