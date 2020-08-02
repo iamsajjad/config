@@ -2,7 +2,7 @@
 
 # copy configs files to home
 cp .vimrc ~/
-cp -R vim/ ~/.config/
+cp -R dotconfig/vim/ ~/.config/
 cp -R dotvim/. ~/.vim/
 
 # copy configs files for neovim
