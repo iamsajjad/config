@@ -3,6 +3,7 @@
 
 set nocompatible                  " must be first, changes behaviour of other settings
 set t_Co=256                      " 256 colors
+set termguicolors
 set fileformat=unix               " sane text files
 set encoding=utf-8                " file encoding
 set updatetime=50                 " reduce the time to show git changes and write changes to file
