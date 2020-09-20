@@ -74,7 +74,7 @@ window:
   title: Alacritty
 
   # Allow terminal applications to change Alacritty's window title.
-  #dynamic_title: true
+  dynamic_title: true
 
   # Window class (Linux/BSD only):
   class:
@@ -232,24 +232,24 @@ colors:
   # Normal colors
   normal:
     black:   '#000000'
-    red:     '#c62828'
-    green:   '#558b2f'
-    yellow:  '#f9a825'
-    blue:    '#1565c0'
-    magenta: '#6a1e9a'
-    cyan:    '#00838f'
-    white:   '#f2f2f2'
+    red:     '#CD0000'
+    green:   '#00CD00'
+    yellow:  '#CDCD00'
+    blue:    '#0000EE'
+    magenta: '#CD00CD'
+    cyan:    '#00CDCD'
+    white:   '#E5E5E5'
 
   # Bright colors
   bright:
-    black:   '#545454'
-    red:     '#ef5350'
-    green:   '#8bc34a'
-    yellow:  '#ffeb3b'
-    blue:    '#64b5f6'
-    magenta: '#ba68c8'
-    cyan:    '#26c6da'
-    white:   '#e0e0e0'
+    black:   '#7F7F7F'
+    red:     '#FF0000'
+    green:   '#00FF00'
+    yellow:  '#FFFF00'
+    blue:    '#5C5CFF'
+    magenta: '#FF00FF'
+    cyan:    '#00FFFF'
+    white:   '#FFFFFF'
 
   # Dim colors
   #
@@ -322,12 +322,12 @@ bell:
 # The value `0.0` is completely transparent and `1.0` is opaque.
 background_opacity: 1.0
 
-#selection:
+selection:
   # This string contains all characters that are used as separators for "semantic words" in Alacritty.
-  #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  #save_to_clipboard: false
+  save_to_clipboard: false
 
 cursor:
   # Cursor style
