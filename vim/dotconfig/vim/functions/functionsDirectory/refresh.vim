@@ -2,7 +2,7 @@
 " ... refresh.vim
 
 " on save reload .vimrc and do :AirlineRefresh
-function! RefreshUI()
+function! Refresh()
   if exists(':AirlineRefresh')
     AirlineRefresh
   else
