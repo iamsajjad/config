@@ -1,9 +1,9 @@
 # setup.sh
 
 # copy configs files to home
-cp .vimrc ~/
 cp -R dotconfig/vim/ ~/.config/
 cp -R dotvim/. ~/.vim/
+cp .vimrc ~/
 
 # copy configs files for neovim
 cp -R nvim/ ~/.config/
@@ -14,5 +14,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # install plugins
 vim +PlugInstall +PlugUpdate +PlugUpgrade +qall
 
-echo "VIM configs done."
+echo "VIM configurations done."
 
