@@ -1,12 +1,12 @@
 # setup.sh
 
-# copy configs files to home
-cp -R dotconfig/vim/ ~/.config/
+# install requirements
+python -m pip install neovim
+
+# copy vim / neovim directories to home
+cp -R dotconfig/. ~/.config/
 cp -R dotvim/. ~/.vim/
 cp .vimrc ~/
-
-# copy configs files for neovim
-cp -R nvim/ ~/.config/
 
 # install vim plug plugins manager
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
