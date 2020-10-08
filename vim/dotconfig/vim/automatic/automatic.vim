@@ -16,7 +16,7 @@ augroup DOTVIMRC
 
   " remove autocmds from the group
   " automatic reload .vimrc and run Refresh
-  autocmd! BufWritePost $MYVIMRC source $MYVIMRC | :call Refresh()
+  autocmd! BufWritePost .vimrc source $MYVIMRC | :call Refresh()
 
 augroup end
 
