@@ -1,3 +1,0 @@
-
-" ... delimiterConfigs.vim
-

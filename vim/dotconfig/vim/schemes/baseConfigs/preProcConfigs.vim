@@ -1,3 +1,0 @@
-
-" ... preProcConfigs.vim
-

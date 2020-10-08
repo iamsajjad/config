@@ -1,3 +1,0 @@
-
-" ... typeConfigs.vim
-

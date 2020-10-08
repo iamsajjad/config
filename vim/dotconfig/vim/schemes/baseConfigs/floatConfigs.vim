@@ -1,3 +1,0 @@
-
-" ... floatConfigs.vim
-

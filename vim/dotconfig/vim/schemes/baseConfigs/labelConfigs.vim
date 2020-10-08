@@ -1,3 +1,0 @@
-
-" ... labelConfigs.vim
-

@@ -1,3 +1,0 @@
-
-" ... booleanConfigs.vim
-

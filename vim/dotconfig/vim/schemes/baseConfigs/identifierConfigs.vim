@@ -1,3 +1,0 @@
-
-" ... identifierConfigs.vim
-

@@ -1,3 +1,0 @@
-
-" ... tagConfigs.vim
-

@@ -1,3 +1,0 @@
-
-" ... specialCharConfigs.vim
-

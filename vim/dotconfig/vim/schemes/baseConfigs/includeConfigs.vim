@@ -1,3 +1,0 @@
-
-" ... includeConfigs.vim
-

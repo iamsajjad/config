@@ -1,3 +1,0 @@
-
-" ... errorConfigs.vim
-

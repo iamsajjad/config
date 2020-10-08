@@ -1,3 +1,0 @@
-
-" ... statementConfigs.vim
-

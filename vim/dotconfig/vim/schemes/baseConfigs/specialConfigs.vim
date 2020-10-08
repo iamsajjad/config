@@ -1,3 +1,0 @@
-
-" ... specialConfigs.vim
-

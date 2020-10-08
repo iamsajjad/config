@@ -1,3 +1,0 @@
-
-" ... specialCommentConfigs.vim
-

@@ -1,3 +1,0 @@
-
-" ... todoConfigs.vim
-

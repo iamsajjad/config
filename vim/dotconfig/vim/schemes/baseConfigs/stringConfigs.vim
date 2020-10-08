@@ -1,3 +1,0 @@
-
-" ... stringConfigs.vim
-

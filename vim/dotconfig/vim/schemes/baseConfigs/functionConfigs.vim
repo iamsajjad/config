@@ -1,3 +1,0 @@
-
-" ... functionConfigs.vim
-

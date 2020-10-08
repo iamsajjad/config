@@ -1,3 +1,0 @@
-
-" ... debugConfigs.vim
-
