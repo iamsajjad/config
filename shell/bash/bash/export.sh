@@ -18,7 +18,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH
 
 #editor
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 #remove duplicate entries from history

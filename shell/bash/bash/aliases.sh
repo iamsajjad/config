@@ -33,6 +33,7 @@ alias cl="clear;ls;pwd"
 alias dnf='sudo dnf'
 alias multitail='multitail --no-repeat -c'
 alias freshclam='sudo freshclam'
+alias vim='nvim'
 alias vi='vim'
 alias svi='sudo vi'
 alias vis='vim "+set si"'
