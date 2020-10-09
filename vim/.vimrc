@@ -12,14 +12,16 @@ if isdirectory($HOME."/.config/vim")
     source $HOME/.config/vim/plugins/schemes.vim                       " schemes plugins  file
     source $HOME/.config/vim/plugins/syntaxes.vim                      " syntaxes plugins file
   call plug#end()
-  " schemes files
-  source $HOME/.config/vim/schemes/schemes.vim                         " schemes file
+  " automatic files
+  source $HOME/.config/vim/automatic/automatic.vim                     " automatic file
   " functions files
   source $HOME/.config/vim/functions/functions.vim                     " functions file
   " mappings files
   source $HOME/.config/vim/mappings/mappings.vim                       " mappings file
-  " automatic files
-  source $HOME/.config/vim/automatic/automatic.vim                     " automatic file
+  " schemes files
+  source $HOME/.config/vim/schemes/schemes.vim                         " schemes file
+  " snippets files
+  source $HOME/.config/vim/snippets/snippets.vim                     " automatic file
   " configure file handle plugins configs
   source $HOME/.config/vim/configure.vim
 endif
