@@ -1,8 +1,9 @@
-# setup.sh
+
+# ... setup.sh
 
 # copy configs files to home
-cp .bashrc ~/
 cp -R bash/ ~/.config/
+cp .bashrc ~/
 
-echo "BASH configs done."
+echo "BASH configurations done."
 

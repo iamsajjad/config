@@ -1,4 +1,5 @@
-# .bash_aliases
+
+# ... aliases.sh
 
 # Aliases
 # Reloads the bashrc file
