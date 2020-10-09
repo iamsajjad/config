@@ -34,6 +34,19 @@ nnoremap <S-Left> :call MarkWindowSwap()<CR> <C-w>h :call DoWindowSwap()<CR>
 nnoremap <S-Down> :call MarkWindowSwap()<CR> <C-w>j :call DoWindowSwap()<CR>
 nnoremap <S-Right> :call MarkWindowSwap()<CR> <C-w>l :call DoWindowSwap()<CR>
 
+" tabs mapping
+nnoremap th  :tabfirst<CR>
+nnoremap tk  :tabnext<CR>
+nnoremap tj  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+
+" open TODO file
+nnoremap <Leader>t  :tabedit ~/TODO<CR>
+
 " similarly ctrl-q doesnt work, so use leader-q for block visual mode
 nnoremap <Leader>q <C-Q>
 
