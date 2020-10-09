@@ -1,4 +1,5 @@
-# setup.sh
+
+# ... setup.sh
 
 # install requirements
 python -m pip install neovim

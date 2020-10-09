@@ -1,7 +1,7 @@
-" .vimrc
-"
-" copy vim/ directory to $HOME/.config/
-"
+
+" ... .vimrc
+
+" configure vim / neovim with .config/vim directory
 if isdirectory($HOME."/.config/vim")
   " configs files
   source $HOME/.config/vim/configs/configs.vim                         " configs file
@@ -21,7 +21,7 @@ if isdirectory($HOME."/.config/vim")
   " schemes files
   source $HOME/.config/vim/schemes/schemes.vim                         " schemes file
   " snippets files
-  source $HOME/.config/vim/snippets/snippets.vim                     " automatic file
+  source $HOME/.config/vim/snippets/snippets.vim                       " snippets file
   " configure file handle plugins configs
   source $HOME/.config/vim/configure.vim
 endif

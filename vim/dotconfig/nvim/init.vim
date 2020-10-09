@@ -1,4 +1,5 @@
-" init.vim
+
+" ... init.vim
 
 " use vim configs
 set runtimepath+=~/.vim,~/.vim/after
