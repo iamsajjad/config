@@ -1,6 +1,7 @@
 
 " ... syntaxes.vim
 
+Plug 'Yggdroot/indentLine'
 Plug 'ap/vim-css-color'
 Plug 'preservim/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
