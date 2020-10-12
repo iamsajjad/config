@@ -1,49 +1,134 @@
 
 " ... setsConfigs.vim
 
-set nocompatible                  " must be first, changes behaviour of other settings
-set t_Co=256                      " 256 colors
+" must be first, changes behaviour of other settings
+set nocompatible
+
+" 8 bits colors
+set t_Co=256
+
+" 24 bits colors
 set termguicolors
-set fileformat=unix               " sane text files
-set encoding=utf-8                " file encoding
-set updatetime=50                 " reduce the time to show git changes and write changes to file
-set textwidth=120                 " break lines when line length increases
-set colorcolumn=121               " show limit column line
-set fo-=t                         " don't automatically wrap text when typing
-set nowrap                        " don't automatically wrap on load
-set tabstop=4                     " use 4 spaces to represent tab
+
+" unix text files format
+set fileformat=unix
+
+" file encoding
+set encoding=utf-8
+
+" reduce the time to show git changes and write changes to file
+set updatetime=50
+
+" break lines when line length increases
+set textwidth=120
+
+" show limit column line
+set colorcolumn=121
+
+" don't automatically wrap text when typing
+set fo-=t
+
+" don't automatically wrap on load
+set nowrap
+
+" use 4 spaces to represent tab
+set tabstop=4
 set softtabstop=4
-set shiftwidth=4                  " number of spaces to use for auto indent
-set expandtab                     " enter spaces when tab is pressed
-set autochdir                     " change directory to opened file directory
-set autoindent                    " copy indent from current line when starting a new line
-set selection=exclusive           " allow cursor to be positioned one char past end of line
-set hidden                        " allow backgrounding buffers without writing them
-set scrolloff=3                   " Keep more context when scrolling off the end of a buffer
-set whichwrap+=<,>,[,]            " allow cursor keys to go right off end of one line, onto start of next
-set backspace=indent,eol,start    " allow backspacing over everything in insert mode
-set number                        " Show current line number
-set relativenumber                " Show relative line numbers
-set nojoinspaces                  " when joining lines, don't insert two spaces after punctuation
-set ignorecase                    " Make searches case-sensitive only if they contain upper-case characters
+
+" number of spaces to use for auto indent
+set shiftwidth=4
+
+" enter spaces when tab is pressed
+set expandtab
+
+" change directory to opened file directory
+set autochdir
+
+" copy indent from current line when starting a new line
+set autoindent
+
+" allow cursor to be positioned one char past end of line
+set selection=exclusive
+
+" allow backgrounding buffers without writing them
+set hidden
+
+" Keep more context when scrolling off the end of a buffer
+set scrolloff=3
+
+" allow cursor keys to go right off end of one line, onto start of next
+set whichwrap+=<,>,[,]
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+" Show current line number
+set number
+
+" Show relative line numbers
+set relativenumber
+
+" when joining lines, don't insert two spaces after punctuation
+set nojoinspaces
+
+" make searches case-sensitive only if they contain upper-case characters
+set ignorecase
 set smartcase
-set incsearch                     " show search matches as the search pattern is typed
-set wrapscan                      " search-next wraps back to start of file
+
+" show search matches as the search pattern is typed
+set incsearch
+
+" search-next wraps back to start of file
+set wrapscan
+
+" highlight search words
 set hlsearch
-set splitbelow splitright         " new spilt [vs right] or [hs below]
-set nospell                       " do not allow spell checking
-set spelllang=en_us               " files that allow spell check set language to english
-set wildmenu                      " make tab completion for files/buffers act like bash
-set ruler                         " highlight last search matches
-set cursorline                    " highlight cursor line
-set showcmd                       " display number of selected chars, lines, or size of blocks.
-set showmatch                     " show matching brackets, etc, for 1/10th of a second
+
+" new vertical split right current split [vs right]
+set splitright
+
+" new horizontal split below current split [hs below]
+set splitbelow
+
+" do not allow spell checking
+set nospell
+
+" files that allow spell check set language to english
+set spelllang=en_us
+
+" make tab completion for files/buffers act like bash
+set wildmenu
+
+" highlight last search matches
+set ruler
+
+" highlight cursor line
+set cursorline
+
+" display number of selected chars, lines, or size of blocks.
+set showcmd
+
+" show matching brackets, etc, for 1/10th of a second
+set showmatch
 set matchtime=1
-set modeline                      " apply opened file configs
-set modelines=3                   " Check for file specific vim settings in the last 3 lines of the file
-set clipboard=unnamedplus         " enable automatic yanking to and pasting from the selection
-set background=dark               " set dark background as default
-filetype plugin on                " enables filetype specific plugins
-filetype on                       " enables filetype detection
-syntax on                         " syntax highlighting
+
+" apply opened file configs
+set modeline
+
+" check for file specific vim configs in the last N lines of the file
+set modelines=3
+
+" clipboard
+if has('clipboard')
+  set clipboard=unnamed
+  if has('unnamedplus')
+    set clipboard+=unnamedplus
+  endif
+endif
+
+" set [dark, light] background as default
+set background=dark
+
+" syntax highlighting
+syntax on
 
