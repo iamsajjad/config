@@ -41,6 +41,9 @@ set shiftwidth=4
 " enter spaces when tab is pressed
 set expandtab
 
+" detect when a file is changed
+set autoread
+
 " change directory to opened file directory
 set autochdir
 

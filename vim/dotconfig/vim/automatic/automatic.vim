@@ -11,6 +11,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 autocmd InsertEnter * :set norelativenumber
 autocmd InsertLeave * :set relativenumber
 
+" checks for changes from outside the file
+autocmd CursorHold * checktime
+
 " source .vimrc at save
 augroup DOTVIMRC
 
