@@ -84,6 +84,11 @@ set wrapscan
 " highlight search words
 set hlsearch
 
+" highlight/preview substitution
+if has('nvim')
+  set inccommand=split
+endif
+
 " new vertical split right current split [vs right]
 set splitright
 
