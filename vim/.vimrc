@@ -15,7 +15,7 @@ if isdirectory($HOME."/.config/vim")
   " abbreviations files
   source $HOME/.config/vim/abbreviations/abbreviations.vim             " abbreviations file
   " automatic files
-  source $HOME/.config/vim/automatic/automatic.vim                     " automatic file
+  source $HOME/.config/vim/automatics/automatics.vim                   " automatics file
   " functions files
   source $HOME/.config/vim/functions/functions.vim                     " functions file
   " mappings files
