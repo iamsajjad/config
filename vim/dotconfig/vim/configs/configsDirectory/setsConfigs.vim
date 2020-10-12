@@ -39,6 +39,8 @@ set cursorline                    " highlight cursor line
 set showcmd                       " display number of selected chars, lines, or size of blocks.
 set showmatch                     " show matching brackets, etc, for 1/10th of a second
 set matchtime=1
+set modeline                      " apply opened file configs
+set modelines=3                   " Check for file specific vim settings in the last 3 lines of the file
 set clipboard=unnamedplus         " enable automatic yanking to and pasting from the selection
 set background=dark               " set dark background as default
 filetype plugin on                " enables filetype specific plugins
