@@ -1,6 +1,9 @@
 
 " ... setsConfigs.vim
 
+" set terminal title
+set title
+
 " must be first, changes behaviour of other settings
 set nocompatible
 
