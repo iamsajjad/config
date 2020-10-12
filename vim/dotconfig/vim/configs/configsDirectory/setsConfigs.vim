@@ -4,9 +4,6 @@
 " set terminal title
 set title
 
-" must be first, changes behaviour of other settings
-set nocompatible
-
 " 8 bits colors
 set t_Co=256
 
