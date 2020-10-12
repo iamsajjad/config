@@ -12,6 +12,8 @@ if isdirectory($HOME."/.config/vim")
     source $HOME/.config/vim/plugins/schemes.vim                       " schemes plugins  file
     source $HOME/.config/vim/plugins/syntaxes.vim                      " syntaxes plugins file
   call plug#end()
+  " abbreviations files
+  source $HOME/.config/vim/abbreviations/abbreviations.vim             " abbreviations file
   " automatic files
   source $HOME/.config/vim/automatic/automatic.vim                     " automatic file
   " functions files
