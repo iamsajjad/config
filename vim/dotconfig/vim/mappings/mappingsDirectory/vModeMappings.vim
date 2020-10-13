@@ -12,3 +12,6 @@ vnoremap <Leader>r "hy:%s/<C-r>h//gc<left><left><left>
 vnoremap < <gv
 vnoremap > >gv
 
+" delete and paste without yank
+vnoremap <Leader>p "_dP
+
