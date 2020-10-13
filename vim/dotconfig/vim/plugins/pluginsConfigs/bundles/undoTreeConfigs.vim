@@ -12,3 +12,5 @@ endif
 set undodir=~/.vim/undoDir
 set undofile
 
+nnoremap <Leader>u :UndotreeShow<CR>
+
