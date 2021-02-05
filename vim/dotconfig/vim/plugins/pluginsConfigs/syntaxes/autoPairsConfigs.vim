@@ -1,0 +1,3 @@
+
+" ... autoPairsConfigs.vim
+
