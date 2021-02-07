@@ -1,7 +1,9 @@
+#!/usr/bin/env bash
 
 # ... setup.sh
 
 # install requirements
+python -m pip install --upgrade setuptools pip
 python -m pip install neovim
 
 # copy vim / neovim directories to home
