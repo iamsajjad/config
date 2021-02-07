@@ -2,9 +2,10 @@
 " ... ultiSnips.vim
 
 " trigger configuration
-let g:UltiSnipsExpandTrigger="<c-e>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " run :UltiSnipsEdit to edit snippets in split
 let g:UltiSnipsEditSplit="vertical"
