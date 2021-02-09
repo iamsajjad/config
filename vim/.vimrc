@@ -7,11 +7,18 @@ if isdirectory($HOME."/.config/vim")
   source $HOME/.config/vim/configs/configs.vim                         " configs file
   " plugins files
   call plug#begin("~/.vim/plugged")
-    source $HOME/.config/vim/plugins/bundles.vim                       " bundles plugins file
-    source $HOME/.config/vim/plugins/formats.vim                       " formats plugins file
-    source $HOME/.config/vim/plugins/languages.vim                     " languages plugins file
-    source $HOME/.config/vim/plugins/schemes.vim                       " schemes plugins  file
-    source $HOME/.config/vim/plugins/syntaxes.vim                      " syntaxes plugins file
+
+    " source plugins files
+    " bundles.vim, formats.vim, languages.vim, schemes.vim, syntaxes.vim
+    if isdirectory($HOME."/.config/vim/plugins")
+      for pluginsFile in split(glob($HOME."/.config/vim/plugins/*.vim"), "\n")
+        execute "source " pluginsFile
+      endfor
+    endif
+
+    " for test or temporary adding plugin do
+    " Plug 'organization/repository'
+
   call plug#end()
   " abbreviations files
   source $HOME/.config/vim/abbreviations/abbreviations.vim             " abbreviations file
