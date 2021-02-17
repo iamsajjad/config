@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# ... setup.sh
+# ... configure.sh
 
 # install requirements
 python -m pip install --upgrade setuptools pip
