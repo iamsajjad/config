@@ -1,5 +1,3 @@
 
 " ... help.vim
 
-setlocal nospell
-

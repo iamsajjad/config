@@ -1,5 +1,3 @@
 
 " ... tex.vim
 
-setlocal spell
-

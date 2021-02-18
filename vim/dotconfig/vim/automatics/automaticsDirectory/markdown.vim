@@ -1,5 +1,3 @@
 
 " ... markdown.vim
 
-setlocal spell
-
