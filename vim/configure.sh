@@ -3,8 +3,8 @@
 # ... configure.sh
 
 # install requirements
-python -m pip install --upgrade setuptools pip
-python -m pip install neovim
+python -m pip install --user --upgrade setuptools pip
+python -m pip install --user neovim
 
 # copy vim / neovim directories to home
 cp -R dotconfig/. ~/.config/
