@@ -59,6 +59,9 @@ set hidden
 " Keep more context when scrolling off the end of a buffer
 set scrolloff=3
 
+" Keep more context when scrolling off the side of a buffer
+set sidescrolloff=10
+
 " allow cursor keys to go right off end of one line, onto start of next
 set whichwrap+=<,>,[,]
 
