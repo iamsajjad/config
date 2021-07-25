@@ -38,10 +38,6 @@ nnoremap <Leader>t  :tabedit ~/TODO<CR>
 " similarly ctrl-q doesnt work, so use leader-q for block visual mode
 nnoremap <Leader>q <C-Q>
 
-" move line up and down >>> Alt + k/j
-nnoremap <A-k> :m-2<CR>
-nnoremap <A-j> :m+<CR>
-
 " duplicate current line >>> 'yy' >>> 'p'
 nmap <C-d> mzyyp`z
 
