@@ -1,8 +1,8 @@
 
 " ... background.vim
 
-" chack background and change it
-function ToggleBackground()
+" check background and change it
+function! ToggleBackground()
   if &background == "dark"
     set background=light
   else
