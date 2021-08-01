@@ -1,3 +1,0 @@
-
-" ... markdownConfigs.vim
-

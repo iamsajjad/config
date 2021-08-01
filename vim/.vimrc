@@ -3,8 +3,8 @@
 
 " configure vim / neovim with .config/vim directory
 if isdirectory($HOME."/.config/vim")
-  " configs files
-  source $HOME/.config/vim/configs/configs.vim                         " configs file
+  " config files
+  source $HOME/.config/vim/config/config.vim
   " plugins files
   call plug#begin("~/.vim/plugged")
 
@@ -21,18 +21,18 @@ if isdirectory($HOME."/.config/vim")
 
   call plug#end()
   " abbreviations files
-  source $HOME/.config/vim/abbreviations/abbreviations.vim             " abbreviations file
+  source $HOME/.config/vim/abbreviations/abbreviations.vim
   " automatic files
-  source $HOME/.config/vim/automatics/automatics.vim                   " automatics file
+  source $HOME/.config/vim/automatics/automatics.vim
   " functions files
-  source $HOME/.config/vim/functions/functions.vim                     " functions file
+  source $HOME/.config/vim/functions/functions.vim
   " mappings files
-  source $HOME/.config/vim/mappings/mappings.vim                       " mappings file
+  source $HOME/.config/vim/mappings/mappings.vim
   " schemes files
-  source $HOME/.config/vim/schemes/schemes.vim                         " schemes file
+  source $HOME/.config/vim/schemes/schemes.vim
   " snippets files
-  source $HOME/.config/vim/snippets/snippets.vim                       " snippets file
-  " configure file handle plugins configs
+  source $HOME/.config/vim/snippets/snippets.vim
+  " configure file handle plugins config
   source $HOME/.config/vim/configure.vim
 endif
 

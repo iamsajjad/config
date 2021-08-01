@@ -1,3 +1,0 @@
-
-" ... vifmConfigs.vim
-

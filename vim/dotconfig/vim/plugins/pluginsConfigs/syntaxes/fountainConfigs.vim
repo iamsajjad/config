@@ -1,3 +1,0 @@
-
-" ... fountainConfigs.vim
-

@@ -1,3 +1,0 @@
-
-" ... nightedConfigs.vim
-

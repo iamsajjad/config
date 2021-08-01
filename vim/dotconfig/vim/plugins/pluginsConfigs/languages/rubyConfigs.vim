@@ -1,3 +1,0 @@
-
-" ... rubyConfigs.vim
-

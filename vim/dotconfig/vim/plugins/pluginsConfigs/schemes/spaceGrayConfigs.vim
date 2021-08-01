@@ -1,3 +1,0 @@
-
-" ... spaceGrayConfigs.vim
-

@@ -1,3 +1,0 @@
-
-" ... endWiseConfigs.vim
-

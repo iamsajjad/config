@@ -1,3 +1,0 @@
-
-" ... paperColorConfigs.vim
-

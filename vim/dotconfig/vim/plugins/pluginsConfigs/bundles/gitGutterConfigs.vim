@@ -1,3 +1,0 @@
-
-" ... gitGutterConfigs.vim
-

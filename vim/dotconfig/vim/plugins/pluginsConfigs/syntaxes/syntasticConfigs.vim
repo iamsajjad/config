@@ -1,3 +1,0 @@
-
-" ... syntasticConfigs.vim
-

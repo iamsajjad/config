@@ -1,3 +1,0 @@
-
-" ... unicodeConfigs.vim
-

@@ -1,3 +1,0 @@
-
-" ... oneConfigs.vim
-

@@ -2,12 +2,12 @@
 " ... configure.vim
 
 if isdirectory($HOME."/.config/vim/plugins")
-  " source plugins configs from pluginsConfigs directory
-  if isdirectory($HOME."/.config/vim/plugins/pluginsConfigs")
-    for configsDirectory in split(glob($HOME."/.config/vim/plugins/pluginsConfigs/*"), "\n")
-      if isdirectory(configsDirectory)
-        for configsFile in split(glob(configsDirectory."/*.vim"), "\n")
-          execute "source " configsFile
+  " source plugins configurations from pluginsConfig directory
+  if isdirectory($HOME."/.config/vim/plugins/pluginsConfig")
+    for configDirectory in split(glob($HOME."/.config/vim/plugins/pluginsConfig/*"), "\n")
+      if isdirectory(configDirectory)
+        for configFile in split(glob(configDirectory."/*.vim"), "\n")
+          execute "source " configFile
         endfor
       endif
     endfor

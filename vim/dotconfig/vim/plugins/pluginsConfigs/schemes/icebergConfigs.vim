@@ -1,3 +1,0 @@
-
-" ... icebergConfigs.vim
-

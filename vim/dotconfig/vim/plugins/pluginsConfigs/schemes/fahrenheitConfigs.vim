@@ -1,3 +1,0 @@
-
-" ... fahrenheitConfigs.vim
-

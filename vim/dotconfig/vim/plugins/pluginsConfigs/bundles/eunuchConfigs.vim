@@ -1,3 +1,0 @@
-
-" ... eunuchConfigs.vim
-
