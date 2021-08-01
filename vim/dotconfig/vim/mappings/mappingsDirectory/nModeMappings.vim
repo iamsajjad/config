@@ -5,7 +5,13 @@
 map <leader>. :call ToggleBackground()<CR>
 
 " taggle between split files
-nnoremap <Tab> <C-w>w
+nnoremap <tab> <C-w>w
+
+" taggle between splits files using h, j, k, l
+nnoremap <silent> <A-k> <c-w>k
+nnoremap <silent> <A-j> <c-w>j
+nnoremap <silent> <A-h> <c-w>h
+nnoremap <silent> <A-l> <c-w>l
 
 " resize split files using h, j, k, l
 nnoremap <C-k> :resize -1<CR>
@@ -42,18 +48,15 @@ nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
 nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
 
 " move line up and down
-nnoremap <leader>j :move .+1<CR>==
 nnoremap <leader>k :move .-2<CR>==
+nnoremap <leader>j :move .+1<CR>==
 
 " open TODO file
 nnoremap <leader>t :tabedit ~/TODO<CR>
 
-" similarly ctrl-q doesnt work, so use leader-q for block visual mode
-nnoremap <leader>q <C-Q>
-
 " duplicate current line >>> 'yy' >>> 'p'
 nmap <C-d> mzyyp`z
 
-" map key to dismiss search highlightedness
+" map key to dismiss search highlighted ness
 map <bs> :noh<CR>
 
