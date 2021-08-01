@@ -2,8 +2,8 @@
 " ... iModeMappings.vim
 
 " move line up and down
-inoremap <silent> <C-j> <C-o>:m .+1<CR>
-inoremap <silent> <C-k> <C-o>:m .-2<CR>
+inoremap <silent> <C-j> <esc>:m .+1<CR>==gi
+inoremap <silent> <C-k> <esc>:m .-2<CR>==gi
 
 " undo chunk at a time
 inoremap , ,<c-g>u
