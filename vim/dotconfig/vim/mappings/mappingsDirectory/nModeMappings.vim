@@ -2,7 +2,7 @@
 " ... nModeMappings.vim
 
 " taggle between background dark and light
-map <Leader>. :call ToggleBackground()<CR>
+map <leader>. :call ToggleBackground()<CR>
 
 " taggle between split files
 nnoremap <Tab> <C-w>w
@@ -14,7 +14,7 @@ nnoremap <C-h> :vertical resize -1<CR>
 nnoremap <C-l> :vertical resize +1<CR>
 
 " reset splits size
-nnoremap <C-e> :winc =<CR>
+nnoremap <C-e> :wincmd =<CR>
 
 " swip split files using h, j, k, l
 nnoremap <S-k> :call MarkWindowSwap()<CR> <C-w>k :call DoWindowSwap()<CR>
@@ -23,16 +23,16 @@ nnoremap <S-j> :call MarkWindowSwap()<CR> <C-w>j :call DoWindowSwap()<CR>
 nnoremap <S-l> :call MarkWindowSwap()<CR> <C-w>l :call DoWindowSwap()<CR>
 
 " tabs mapping
-nnoremap th  :tabfirst<CR>
-nnoremap tk  :tabnext<CR>
-nnoremap tj  :tabprev<CR>
-nnoremap tl  :tablast<CR>
-nnoremap tt  :tabedit<Space>
-nnoremap tn  :tabnext<Space>
-nnoremap tm  :tabm<Space>
-nnoremap td  :tabclose<CR>
+nnoremap th :tabfirst<CR>
+nnoremap tk :tabnext<CR>
+nnoremap tj :tabprev<CR>
+nnoremap tl :tablast<CR>
+nnoremap tt :tabedit<Space>
+nnoremap tn :tabnext<Space>
+nnoremap tm :tabm<Space>
+nnoremap td :tabclose<CR>
 
-" Keep cursor in center
+" keep cursor in center
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
@@ -42,14 +42,14 @@ nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
 nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
 
 " move line up and down
-nnoremap <Leader>j :m .+1<CR>==
-nnoremap <Leader>k :m .-2<CR>==
+nnoremap <leader>j :move .+1<CR>==
+nnoremap <leader>k :move .-2<CR>==
 
 " open TODO file
-nnoremap <Leader>t  :tabedit ~/TODO<CR>
+nnoremap <leader>t :tabedit ~/TODO<CR>
 
 " similarly ctrl-q doesnt work, so use leader-q for block visual mode
-nnoremap <Leader>q <C-Q>
+nnoremap <leader>q <C-Q>
 
 " duplicate current line >>> 'yy' >>> 'p'
 nmap <C-d> mzyyp`z
