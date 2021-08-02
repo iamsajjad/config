@@ -8,19 +8,21 @@ map <leader>. :call ToggleBackground()<CR>
 nnoremap <tab> <C-w>w
 
 " taggle between splits files using h, j, k, l
-nnoremap <silent> <A-k> <c-w>k
-nnoremap <silent> <A-j> <c-w>j
-nnoremap <silent> <A-h> <c-w>h
-nnoremap <silent> <A-l> <c-w>l
+nnoremap <silent> <C-k> <c-w>k
+nnoremap <silent> <C-j> <c-w>j
+nnoremap <silent> <C-h> <c-w>h
+nnoremap <silent> <C-l> <c-w>l
 
 " resize split files using h, j, k, l
-nnoremap <C-k> :resize -1<CR>
-nnoremap <C-j> :resize +1<CR>
-nnoremap <C-h> :vertical resize -1<CR>
-nnoremap <C-l> :vertical resize +1<CR>
+nnoremap <A-k> :resize -5<CR>
+nnoremap <A-j> :resize +5<CR>
+nnoremap <A-h> :vertical resize -5<CR>
+nnoremap <A-l> :vertical resize +5<CR>
 
 " reset splits size
-nnoremap <C-e> :wincmd =<CR>
+nnoremap <A-e> :wincmd =<CR>
+" maximize current split
+nnoremap <A-m> <C-w><bar> <C-w>_
 
 " swip split files using h, j, k, l
 nnoremap <S-k> :call MarkWindowSwap()<CR> <C-w>k :call DoWindowSwap()<CR>
