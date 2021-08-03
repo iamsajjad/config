@@ -47,6 +47,10 @@ nnoremap <leader>fm :set foldmethod=marker<CR>
 nnoremap <leader>fs :set foldmethod=syntax<CR>
 nnoremap <leader>fd :set foldmethod=diff<CR>
 
+" drop a mark before jumping to the top or bottom of the file
+nnoremap gg mjgg
+nnoremap G mjG
+
 " keep cursor in center
 nnoremap n nzzzv
 nnoremap N Nzzzv
