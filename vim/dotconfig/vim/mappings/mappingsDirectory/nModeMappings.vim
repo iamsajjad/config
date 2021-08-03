@@ -40,6 +40,13 @@ nnoremap tn :tabnext<Space>
 nnoremap tm :tabm<Space>
 nnoremap td :tabclose<CR>
 
+" fold mapping
+nnoremap <leader>ff :set foldmethod=manual<CR>
+nnoremap <leader>fi :set foldmethod=indent<CR>
+nnoremap <leader>fm :set foldmethod=marker<CR>
+nnoremap <leader>fs :set foldmethod=syntax<CR>
+nnoremap <leader>fd :set foldmethod=diff<CR>
+
 " keep cursor in center
 nnoremap n nzzzv
 nnoremap N Nzzzv
@@ -60,5 +67,5 @@ nnoremap <leader>t :tabedit ~/TODO<CR>
 nmap <C-d> mzyyp`z
 
 " map key to dismiss search highlighted ness
-map <bs> :noh<CR>
+map <bs> :nohlsearch<CR>
 

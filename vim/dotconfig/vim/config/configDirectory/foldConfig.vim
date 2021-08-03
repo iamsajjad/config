@@ -2,7 +2,7 @@
 " ... foldConfig.vim
 
 " fold based on indent
-set foldmethod=syntax
+set foldmethod=indent
 
 " no folds closed
 set foldlevelstart=99
@@ -14,5 +14,5 @@ set foldnestmax=10
 set nofoldenable
 
 " fold level
-set foldlevel=1
+set foldlevel=0
 
