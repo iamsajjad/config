@@ -1,8 +1,8 @@
 
 " ... goyoConfig.vim
 
-" enter goyo configs
-function! s:goyoEnter()
+" enter goyo config
+function! s:GoyoEnter()
   if executable('tmux') && strlen($TMUX)
     silent !tmux set status off
     silent !tmux list-panes -F '\#F' | grep -q Z || tmux resize-pane -Z
@@ -14,21 +14,21 @@ function! s:goyoEnter()
   " ...
 endfunction
 
-" leave goyo configs
-function! s:goyoLeave()
+" leave goyo config
+function! s:GoyoLeave()
   if executable('tmux') && strlen($TMUX)
     silent !tmux set status on
     silent !tmux list-panes -F '\#F' | grep -q Z && tmux resize-pane -Z
   endif
   set showmode
   set showcmd
-  set scrolloff=5
+  set scrolloff=3
   Limelight!
   " ...
 endfunction
 
-autocmd! User GoyoEnter nested call <SID>goyoEnter()
-autocmd! User GoyoLeave nested call <SID>goyoLeave()
+autocmd! User GoyoEnter nested call <SID>GoyoEnter()
+autocmd! User GoyoLeave nested call <SID>GoyoLeave()
 
 " mappings
 nnoremap <Leader><Enter> :Goyo<CR>
