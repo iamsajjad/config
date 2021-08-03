@@ -2,11 +2,11 @@
 " ... vModeMappings.vim
 
 " map sort function to a key
-vnoremap <leader>s :sort<CR>
+vnoremap <Leader>s :sort<CR>
 
 " substitute command
 " hit 'y' to relpace one at time or hit 'a' to confirm all replacements
-vnoremap <leader>r "hy:%s/<C-r>h//gc<left><left><left>
+vnoremap <Leader>r "hy:%s/<C-r>h//gc<Left><Left><Left>
 
 " indentation
 vnoremap < <gv
@@ -17,5 +17,5 @@ vnoremap J :move '>+1<CR>gv=gv
 vnoremap K :move '<-2<CR>gv=gv
 
 " delete and paste without yank
-vnoremap <leader>p "_dP
+vnoremap <Leader>p "_dP
 

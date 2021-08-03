@@ -2,7 +2,7 @@
 " ... nModeMappings.vim
 
 " taggle between background dark and light
-map <leader>. :call ToggleBackground()<CR>
+map <Leader>. :call ToggleBackground()<CR>
 
 " taggle between split files
 nnoremap <tab> <C-w>w
@@ -41,11 +41,11 @@ nnoremap tm :tabm<Space>
 nnoremap td :tabclose<CR>
 
 " fold mapping
-nnoremap <leader>ff :set foldmethod=manual<CR>
-nnoremap <leader>fi :set foldmethod=indent<CR>
-nnoremap <leader>fm :set foldmethod=marker<CR>
-nnoremap <leader>fs :set foldmethod=syntax<CR>
-nnoremap <leader>fd :set foldmethod=diff<CR>
+nnoremap <Leader>ff :set foldmethod=manual<CR>
+nnoremap <Leader>fi :set foldmethod=indent<CR>
+nnoremap <Leader>fm :set foldmethod=marker<CR>
+nnoremap <Leader>fs :set foldmethod=syntax<CR>
+nnoremap <Leader>fd :set foldmethod=diff<CR>
 
 " drop a mark before jumping to the top or bottom of the file
 nnoremap gg mjgg
@@ -61,15 +61,15 @@ nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
 nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
 
 " move line up and down
-nnoremap <leader>k :move .-2<CR>==
-nnoremap <leader>j :move .+1<CR>==
+nnoremap <Leader>k :move .-2<CR>==
+nnoremap <Leader>j :move .+1<CR>==
 
 " open TODO file
-nnoremap <leader>t :tabedit ~/TODO<CR>
+nnoremap <Leader>t :tabedit ~/TODO<CR>
 
 " duplicate current line >>> 'yy' >>> 'p'
 nmap <C-d> mzyyp`z
 
 " map key to dismiss search highlighted ness
-map <bs> :nohlsearch<CR>
+map <BS> :nohlsearch<CR>
 
